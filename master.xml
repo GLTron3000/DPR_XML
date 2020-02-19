@@ -619,31 +619,31 @@
     </semestre>
   </semestres>
   <unites>
-    <unite id="ME5SIN-S40BI2I4">
+    <unite id="ME5SIN-S40BI2I4" role="obligatoire">
       <nom>Analysis of Omics Data</nom>
       <credits>6</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S40BI2I4A">
+    <unite id="ME5SIN-S40BI2I4A" role="obligatoire">
       <nom>Bioinformatics Analysis of Omics Data</nom>
       <credits/>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S40BI2I4B">
+    <unite id="ME5SIN-S40BI2I4B" role="obligatoire">
       <nom>Statistical Analysis of Omics Data</nom>
       <credits/>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S40BI3D7">
+    <unite id="ME5SIN-S40BI3D7" role="obligatoire">
       <nom>Biological interaction networks</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S40BI1Z1">
+    <unite id="ME5SIN-S40BI1Z1" role="obligatoire">
       <nom>Fundamentals in biology 1</nom>
       <credits>3</credits>
       <resume>
@@ -667,7 +667,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S40BI1Z2">
+    <unite id="ME5SIN-S40BI1Z2" role="obligatoire">
       <nom>UE professionnalisante 1 : Professional perspectives for biological systems modelling</nom>
       <credits>3</credits>
       <resume>
@@ -677,7 +677,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S40BI2Z1">
+    <unite id="ME5SIN-S40BI2Z1" role="obligatoire">
       <nom>Fundamentals of biology 2</nom>
       <credits>4</credits>
       <resume>
@@ -723,25 +723,25 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S40BI3Z2A">
+    <unite id="ME5SIN-S40BI3Z2A" role="obligatoire">
       <nom>Advanced Biology : Developmental Biology</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S40BI3Z2B">
+    <unite id="ME5SIN-S40BI3Z2B" role="obligatoire">
       <nom>Advanced Biology : Immunology</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S40BI3Z4">
+    <unite id="ME5SIN-S40BI3Z4" role="obligatoire">
       <nom>Advanced biology : Neurobiology</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN1Z1">
+    <unite id="ME5SIN-S51IN1Z1" role="obligatoire">
       <nom>Discrete modelling of dynamical biological systems 1</nom>
       <credits>3</credits>
       <resume>
@@ -754,7 +754,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN1Z4">
+    <unite id="ME5SIN-S51IN1Z4" role="obligatoire">
       <nom>Computational Biology</nom>
       <credits>3</credits>
       <resume>
@@ -775,13 +775,13 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN2Z1">
+    <unite id="ME5SIN-S51IN2Z1" role="obligatoire">
       <nom>Discrete mathematics</nom>
       <credits>6</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN2Z1A">
+    <unite id="ME5SIN-S51IN2Z1A" role="obligatoire">
       <nom>Discrete modelling of dynamical biological systems 2</nom>
       <credits/>
       <resume>
@@ -799,7 +799,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN2Z1B">
+    <unite id="ME5SIN-S51IN2Z1B" role="obligatoire">
       <nom>Graph theory and algorithms 2</nom>
       <credits/>
       <resume>
@@ -820,13 +820,13 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN2Z2">
+    <unite id="ME5SIN-S51IN2Z2" role="obligatoire">
       <nom>Statistical and computational tools for biological modelling</nom>
       <credits>6</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN2Z2A">
+    <unite id="ME5SIN-S51IN2Z2A" role="obligatoire">
       <nom>Graph theory and algorithms 1</nom>
       <credits/>
       <resume>
@@ -844,7 +844,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN2Z4O">
+    <unite id="ME5SIN-S51IN2Z4O" role="obligatoire">
       <nom>Complexity and computability</nom>
       <credits>6</credits>
       <resume>
@@ -860,25 +860,25 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN3Z2">
+    <unite id="ME5SIN-S51IN3Z2" role="obligatoire">
       <nom>Discrete geometry and graphical models</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51IN3Z3">
+    <unite id="ME5SIN-S51IN3Z3" role="obligatoire">
       <nom>Distributed algorithms for biology</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S53MA1Z1">
+    <unite id="ME5SIN-S53MA1Z1" role="obligatoire">
       <nom>Mathematics for modelling</nom>
       <credits>6</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S53MA1Z1A">
+    <unite id="ME5SIN-S53MA1Z1A" role="obligatoire">
       <nom>Probabilities and statistics for modelling 1</nom>
       <credits/>
       <resume>
@@ -919,7 +919,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S53MA2Z2B">
+    <unite id="ME5SIN-S53MA2Z2B" role="obligatoire">
       <nom>Statistics for biology</nom>
       <credits/>
       <resume>
@@ -943,7 +943,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S54MA1Z1B">
+    <unite id="ME5SIN-S54MA1Z1B" role="obligatoire">
       <nom>Continuous dynamical systems and modelling : examples</nom>
       <credits/>
       <resume>
@@ -973,7 +973,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S99XX2Z1">
+    <unite id="ME5SIN-S99XX2Z1" role="obligatoire">
       <nom>Research project and scientific communication</nom>
       <credits>6</credits>
       <resume>
@@ -987,7 +987,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S99XX2Z2">
+    <unite id="ME5SIN-S99XX2Z2" role="obligatoire">
       <nom>UE professionnalisante 2 : CenTuri Seminars</nom>
       <credits>2</credits>
       <resume>
@@ -997,7 +997,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S99XX3Z1">
+    <unite id="ME5SIN-S99XX3Z1" role="obligatoire">
       <nom>Interdisciplinary project in modelling</nom>
       <credits>6</credits>
       <resume>
@@ -1009,7 +1009,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S99XX4Z1">
+    <unite id="ME5SIN-S99XX4Z1" role="obligatoire">
       <nom>UE professionnalisante 3 : CenTuri Seminars</nom>
       <credits>3</credits>
       <resume>
@@ -1019,7 +1019,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S99XX4Z2">
+    <unite id="ME5SIN-S99XX4Z2" role="obligatoire">
       <nom>Master thesis</nom>
       <credits>30</credits>
       <resume>
@@ -1029,7 +1029,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51AN1M1">
+    <unite id="ME5SIN-S51AN1M1" role="obligatoire">
       <nom>Anglais S1</nom>
       <credits>3</credits>
       <resume/>
@@ -1039,7 +1039,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51AN3M1">
+    <unite id="ME5SIN-S51AN3M1" role="obligatoire">
       <nom>Anglais S3</nom>
       <credits>3</credits>
       <resume>
@@ -1052,7 +1052,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN1M1">
+    <unite id="ME5SIN-S51IN1M1" role="obligatoire">
       <nom>Génie logiciel</nom>
       <credits>6</credits>
       <resume>
@@ -1150,7 +1150,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN1M2">
+    <unite id="ME5SIN-S51IN1M2" role="obligatoire">
       <nom>Complexité</nom>
       <credits>6</credits>
       <resume>
@@ -1182,7 +1182,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN1M3">
+    <unite id="ME5SIN-S51IN1M3" role="obligatoire">
       <nom>Introduction à la sciences des données</nom>
       <credits>3</credits>
       <resume>
@@ -1198,7 +1198,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN1M4">
+    <unite id="ME5SIN-S51IN1M4" role="obligatoire">
       <nom>Programmation objet concurrente</nom>
       <credits>3</credits>
       <resume>
@@ -1243,7 +1243,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN1M5">
+    <unite id="ME5SIN-S51IN1M5" role="obligatoire">
       <nom>Réseaux</nom>
       <credits>4</credits>
       <resume>
@@ -1289,7 +1289,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN1M6">
+    <unite id="ME5SIN-S51IN1M6" role="obligatoire">
       <nom>Algorithmique et recherche opérationnelle</nom>
       <credits>3</credits>
       <resume>
@@ -1323,7 +1323,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2A1">
+    <unite id="ME5SIN-S51IN2A1" role="obligatoire">
       <nom>Introduction à l’apprentissage artificiel</nom>
       <credits>3</credits>
       <resume>
@@ -1338,7 +1338,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2A2">
+    <unite id="ME5SIN-S51IN2A2" role="obligatoire">
       <nom>Introduction au traitement automatique du langage</nom>
       <credits>3</credits>
       <resume>
@@ -1354,7 +1354,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2A4">
+    <unite id="ME5SIN-S51IN2A4" role="obligatoire">
       <nom>Modélisation et résolution pour la décision</nom>
       <credits>3</credits>
       <resume>
@@ -1370,7 +1370,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2A5">
+    <unite id="ME5SIN-S51IN2A5" role="obligatoire">
       <nom>Fiabilité logicielle</nom>
       <credits>3</credits>
       <resume>
@@ -1386,7 +1386,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2A6">
+    <unite id="ME5SIN-S51IN2A6" role="obligatoire">
       <nom>Analyse de programmes</nom>
       <credits>3</credits>
       <resume>
@@ -1401,7 +1401,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2A7">
+    <unite id="ME5SIN-S51IN2A7" role="obligatoire">
       <nom>Cryptographie</nom>
       <credits>3</credits>
       <resume>
@@ -1416,7 +1416,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2B1">
+    <unite id="ME5SIN-S51IN2B1" role="obligatoire">
       <nom>Modélisation géométrique et maillages</nom>
       <credits>3</credits>
       <resume>
@@ -1431,7 +1431,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2B2">
+    <unite id="ME5SIN-S51IN2B2" role="obligatoire">
       <nom>Programmation graphique</nom>
       <credits>3</credits>
       <resume>
@@ -1447,7 +1447,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2B3">
+    <unite id="ME5SIN-S51IN2B3" role="obligatoire">
       <nom>Modélisation de surfaces 3D</nom>
       <credits>3</credits>
       <resume/>
@@ -1458,7 +1458,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2C1">
+    <unite id="ME5SIN-S51IN2C1" role="obligatoire">
       <nom>Intégration des données</nom>
       <credits>3</credits>
       <resume>
@@ -1495,7 +1495,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2C2">
+    <unite id="ME5SIN-S51IN2C2" role="obligatoire">
       <nom>Données post-relationnelles</nom>
       <credits>3</credits>
       <resume>
@@ -1516,7 +1516,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2F1">
+    <unite id="ME5SIN-S51IN2F1" role="obligatoire">
       <nom>Calculabilité avancée</nom>
       <credits>3</credits>
       <resume>
@@ -1555,7 +1555,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2F2">
+    <unite id="ME5SIN-S51IN2F2" role="obligatoire">
       <nom>Algorithmes à performance garantie</nom>
       <credits>3</credits>
       <resume>
@@ -1570,7 +1570,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2F3">
+    <unite id="ME5SIN-S51IN2F3" role="obligatoire">
       <nom>Théorie des graphes avancée</nom>
       <credits>3</credits>
       <resume>
@@ -1584,7 +1584,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M01">
+    <unite id="ME5SIN-S51IN2M01" role="obligatoire">
       <nom>Travail d'étude et de recherche</nom>
       <credits>6</credits>
       <resume>
@@ -1598,7 +1598,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M03">
+    <unite id="ME5SIN-S51IN2M03" role="obligatoire">
       <nom>Interface homme-machine</nom>
       <credits>3</credits>
       <resume>
@@ -1625,7 +1625,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M04">
+    <unite id="ME5SIN-S51IN2M04" role="obligatoire">
       <nom>Informatique et calcul quantique</nom>
       <credits>3</credits>
       <resume>
@@ -1665,7 +1665,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M05">
+    <unite id="ME5SIN-S51IN2M05" role="obligatoire">
       <nom>Programmation des processeurs graphiques</nom>
       <credits>3</credits>
       <resume>
@@ -1680,7 +1680,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M06">
+    <unite id="ME5SIN-S51IN2M06" role="obligatoire">
       <nom>Programmation fonctionnelle</nom>
       <credits>3</credits>
       <resume>
@@ -1716,7 +1716,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M07">
+    <unite id="ME5SIN-S51IN2M07" role="obligatoire">
       <nom>Architecture Java Entreprise Edition et sécurité des applications</nom>
       <credits>6</credits>
       <resume/>
@@ -1726,7 +1726,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M07A">
+    <unite id="ME5SIN-S51IN2M07A" role="obligatoire">
       <nom>Architecture JEE</nom>
       <credits/>
       <resume>
@@ -1752,7 +1752,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M07B">
+    <unite id="ME5SIN-S51IN2M07B" role="obligatoire">
       <nom>Sécurité des applications</nom>
       <credits/>
       <resume>
@@ -1767,7 +1767,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M08">
+    <unite id="ME5SIN-S51IN2M08" role="obligatoire">
       <nom>Méthodes numériques et probabilistes pour l’informatique</nom>
       <credits>6</credits>
       <resume/>
@@ -1777,7 +1777,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M08A">
+    <unite id="ME5SIN-S51IN2M08A" role="obligatoire">
       <nom>Aspects probabilistes pour l’informatique</nom>
       <credits/>
       <resume>
@@ -1792,7 +1792,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN2M08B">
+    <unite id="ME5SIN-S51IN2M08B" role="obligatoire">
       <nom>Méthodes numériques pour l’informatique</nom>
       <credits/>
       <resume>
@@ -1808,7 +1808,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN3A1">
+    <unite id="ME5SIN-S51IN3A1" role="obligatoire">
       <nom>Sécurité internet réseaux</nom>
       <credits>6</credits>
       <resume>
@@ -1818,7 +1818,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
     </unite>
-    <unite id="ME5SIN-S51IN3A2">
+    <unite id="ME5SIN-S51IN3A2" role="obligatoire">
       <nom>Systèmes d'information d'entreprise</nom>
       <credits>3</credits>
       <resume>
@@ -1837,7 +1837,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3A4">
+    <unite id="ME5SIN-S51IN3A4" role="obligatoire">
       <nom>Sécurité fonctionnelle et qualité</nom>
       <credits>6</credits>
       <resume>
@@ -1852,7 +1852,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
     </unite>
-    <unite id="ME5SIN-S51IN3A6">
+    <unite id="ME5SIN-S51IN3A6" role="obligatoire">
       <nom>Sécurité des applications 2</nom>
       <credits>3</credits>
       <resume>
@@ -1862,7 +1862,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
     </unite>
-    <unite id="ME5SIN-S51IN3A7">
+    <unite id="ME5SIN-S51IN3A7" role="obligatoire">
       <nom>Politiques et modèles de contrôle d'accès</nom>
       <credits>3</credits>
       <resume>
@@ -1872,7 +1872,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
     </unite>
-    <unite id="ME5SIN-S51IN3A8">
+    <unite id="ME5SIN-S51IN3A8" role="obligatoire">
       <nom>Veille sécurité</nom>
       <credits>3</credits>
       <resume>
@@ -1882,7 +1882,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
     </unite>
-    <unite id="ME5SIN-S51IN3B1">
+    <unite id="ME5SIN-S51IN3B1" role="obligatoire">
       <nom>Fondamentaux pour l’informatique graphique</nom>
       <credits>3</credits>
       <resume>
@@ -1892,7 +1892,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN3B2">
+    <unite id="ME5SIN-S51IN3B2" role="obligatoire">
       <nom>Modèles géométriques : représentations et traitement</nom>
       <credits>6</credits>
       <resume>
@@ -1902,7 +1902,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN3B3">
+    <unite id="ME5SIN-S51IN3B3" role="obligatoire">
       <nom>Géométrie discrète</nom>
       <credits>6</credits>
       <resume>
@@ -1912,7 +1912,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN3B4">
+    <unite id="ME5SIN-S51IN3B4" role="obligatoire">
       <nom>Animation et rendu</nom>
       <credits>3</credits>
       <resume>
@@ -1922,7 +1922,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN3B5">
+    <unite id="ME5SIN-S51IN3B5" role="obligatoire">
       <nom>Programmation graphique et applications industrielles</nom>
       <credits>6</credits>
       <resume>
@@ -1932,7 +1932,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D01">
+    <unite id="ME5SIN-S51IN3D01" role="obligatoire">
       <nom>Génie logiciel 2 et gestion de projets</nom>
       <credits>6</credits>
       <resume>
@@ -1961,7 +1961,7 @@
       <ref-intervenant ref="IN37097"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D02">
+    <unite id="ME5SIN-S51IN3D02" role="obligatoire">
       <nom>Big data</nom>
       <credits>3</credits>
       <resume>
@@ -1987,7 +1987,7 @@
       <ref-intervenant ref="IN12544"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D04">
+    <unite id="ME5SIN-S51IN3D04" role="obligatoire">
       <nom>Gestion des données</nom>
       <credits>6</credits>
       <resume>
@@ -2015,7 +2015,7 @@
       <ref-intervenant ref="IN16625"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D11">
+    <unite id="ME5SIN-S51IN3D11" role="obligatoire">
       <nom>Architecture des applications</nom>
       <credits>3</credits>
       <resume>
@@ -2038,7 +2038,7 @@
       <ref-intervenant ref="IN18"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D13">
+    <unite id="ME5SIN-S51IN3D13" role="obligatoire">
       <nom>Qualité logicielle</nom>
       <credits>3</credits>
       <resume>
@@ -2070,7 +2070,7 @@
       <ref-intervenant ref="IN37097"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D20">
+    <unite id="ME5SIN-S51IN3D20" role="obligatoire">
       <nom>Analyse des données</nom>
       <credits>3</credits>
       <resume>
@@ -2116,7 +2116,7 @@
       <ref-intervenant ref="IN7722"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D21">
+    <unite id="ME5SIN-S51IN3D21" role="obligatoire">
       <nom>Analyse et reporting pour le décisionnel</nom>
       <credits>3</credits>
       <resume>
@@ -2164,7 +2164,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D22">
+    <unite id="ME5SIN-S51IN3D22" role="obligatoire">
       <nom>Conception d’applications décisionnelles</nom>
       <credits>3</credits>
       <resume>
@@ -2212,7 +2212,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D23">
+    <unite id="ME5SIN-S51IN3D23" role="obligatoire">
       <nom>Business process</nom>
       <credits>3</credits>
       <resume>
@@ -2223,7 +2223,7 @@
       <ref-intervenant ref="IN12544"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3D24">
+    <unite id="ME5SIN-S51IN3D24" role="obligatoire">
       <nom>Cloud computing</nom>
       <credits>3</credits>
       <resume>
@@ -2234,7 +2234,7 @@
       <ref-intervenant ref="IN12544"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E02">
+    <unite id="ME5SIN-S51IN3E02" role="obligatoire">
       <nom>Modélisation et résolution pour l'optimisation</nom>
       <credits>3</credits>
       <resume>
@@ -2244,13 +2244,13 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E03">
+    <unite id="ME5SIN-S51IN3E03" role="obligatoire">
       <nom>Data science et deep learning</nom>
       <credits>9</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E04">
+    <unite id="ME5SIN-S51IN3E04" role="obligatoire">
       <nom>Traitement du langage naturel et linguistique</nom>
       <credits>3</credits>
       <resume>
@@ -2260,7 +2260,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E06">
+    <unite id="ME5SIN-S51IN3E06" role="obligatoire">
       <nom>Apprentissage par renforcement</nom>
       <credits>3</credits>
       <resume>
@@ -2270,7 +2270,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E07">
+    <unite id="ME5SIN-S51IN3E07" role="obligatoire">
       <nom>Signal, apprentissage et multimédia</nom>
       <credits>3</credits>
       <resume>
@@ -2280,7 +2280,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E08">
+    <unite id="ME5SIN-S51IN3E08" role="obligatoire">
       <nom>Prédictions structurées pour le traitement automatique du langage naturel</nom>
       <credits>3</credits>
       <resume>
@@ -2290,7 +2290,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E09">
+    <unite id="ME5SIN-S51IN3E09" role="obligatoire">
       <nom>Raisonnement automatique en milieu industriel</nom>
       <credits>3</credits>
       <resume>
@@ -2300,7 +2300,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E3A">
+    <unite id="ME5SIN-S51IN3E3A" role="obligatoire">
       <nom>Science des données</nom>
       <credits/>
       <resume>
@@ -2310,7 +2310,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E3B">
+    <unite id="ME5SIN-S51IN3E3B" role="obligatoire">
       <nom>Deep learning</nom>
       <credits/>
       <resume>
@@ -2320,7 +2320,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN3E3C">
+    <unite id="ME5SIN-S51IN3E3C" role="obligatoire">
       <nom>Maths pour l’intelligence artificielle</nom>
       <credits/>
       <resume>
@@ -2330,7 +2330,7 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN4M1">
+    <unite id="ME5SIN-S51IN4M1" role="obligatoire">
       <nom>Travail d'étude et de recherche S4</nom>
       <credits>6</credits>
       <resume/>
@@ -2338,13 +2338,13 @@
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN4M1BIS">
+    <unite id="ME5SIN-S51IN4M1BIS" role="obligatoire">
       <nom>Communication scientifique</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51IN4M2">
+    <unite id="ME5SIN-S51IN4M2" role="obligatoire">
       <nom>Stage de cinq à six mois</nom>
       <credits>24</credits>
       <resume>
@@ -2370,13 +2370,13 @@
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN4M2B">
+    <unite id="ME5SIN-S51IN4M2B" role="obligatoire">
       <nom>Stage IAAA</nom>
       <credits>27</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S51PP1M2">
+    <unite id="ME5SIN-S51PP1M2" role="obligatoire">
       <nom>Environnement et R&amp;D en informatique</nom>
       <credits>2</credits>
       <resume>
@@ -2391,7 +2391,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51PP2M02">
+    <unite id="ME5SIN-S51PP2M02" role="obligatoire">
       <nom>Communication</nom>
       <credits>3</credits>
       <resume>
@@ -2443,7 +2443,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51PP3M2">
+    <unite id="ME5SIN-S51PP3M2" role="obligatoire">
       <nom>Communication 2</nom>
       <credits>3</credits>
       <resume>
@@ -2480,7 +2480,7 @@
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-SUP100">
+    <unite id="ME5SIN-SUP100" role="obligatoire">
       <nom>Stage de M1</nom>
       <credits>6</credits>
       <resume>
@@ -2495,183 +2495,183 @@
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AF"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C1">
+    <unite id="ME5SIN-S51IN3C1" role="obligatoire">
       <nom>Algorithmique et complexité</nom>
       <credits>6</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C11">
+    <unite id="ME5SIN-S51IN3C11" role="obligatoire">
       <nom>Introduction à la logique modale</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C12">
+    <unite id="ME5SIN-S51IN3C12" role="obligatoire">
       <nom>Modèles de calcul naturel - MOCANA</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C13O">
+    <unite id="ME5SIN-S51IN3C13O" role="obligatoire">
       <nom>Fondements de la PPC et SAT</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C14O">
+    <unite id="ME5SIN-S51IN3C14O" role="obligatoire">
       <nom>Théorie métrique des graphes</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C15O">
+    <unite id="ME5SIN-S51IN3C15O" role="obligatoire">
       <nom>Algorithmique distribuée</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C16O">
+    <unite id="ME5SIN-S51IN3C16O" role="obligatoire">
       <nom>Vérification : de la théorie à la pratique</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C17">
+    <unite id="ME5SIN-S51IN3C17" role="obligatoire">
       <nom>Logiques computationnelles</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C18">
+    <unite id="ME5SIN-S51IN3C18" role="obligatoire">
       <nom>Ensembles ordonnés en combinatoire</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C19">
+    <unite id="ME5SIN-S51IN3C19" role="obligatoire">
       <nom>Optimisation combinatoire</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C2">
+    <unite id="ME5SIN-S51IN3C2" role="obligatoire">
       <nom>Logique et automates</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C20">
+    <unite id="ME5SIN-S51IN3C20" role="obligatoire">
       <nom>Théorie des automates : extensions et applications</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C21">
+    <unite id="ME5SIN-S51IN3C21" role="obligatoire">
       <nom>Modélisation et simulation à événements discrets</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN3C22">
+    <unite id="ME5SIN-S51IN3C22" role="obligatoire">
       <nom>ASP : fondements théoriques, calcul et applications</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN4C0">
+    <unite id="ME5SIN-S51IN4C0" role="obligatoire">
       <nom>Logique et automates</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51IN4C5">
+    <unite id="ME5SIN-S51IN4C5" role="obligatoire">
       <nom>Initiation à la recherche IMD</nom>
       <credits>24</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C23O">
+    <unite id="ME5SIN-S51MA3C23O" role="obligatoire">
       <nom>Sémantique dénotationnelle et logique linéaire</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C24O">
+    <unite id="ME5SIN-S51MA3C24O" role="obligatoire">
       <nom>Dynamique symbolique</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C25">
+    <unite id="ME5SIN-S51MA3C25" role="obligatoire">
       <nom>Topologie algébrique discrète – topologie algorithmique</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C26">
+    <unite id="ME5SIN-S51MA3C26" role="obligatoire">
       <nom>Logique catégorique d'ordre supérieur</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C27">
+    <unite id="ME5SIN-S51MA3C27" role="obligatoire">
       <nom>Réalisabilité classique</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C28">
+    <unite id="ME5SIN-S51MA3C28" role="obligatoire">
       <nom>Combinatoire des mots</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C29">
+    <unite id="ME5SIN-S51MA3C29" role="obligatoire">
       <nom>Théorie algorithmique des nombres</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C3">
+    <unite id="ME5SIN-S51MA3C3" role="obligatoire">
       <nom>Modèles de calcul, systèmes dynamiques et théorie algorithmique des nombres</nom>
       <credits>6</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C30">
+    <unite id="ME5SIN-S51MA3C30" role="obligatoire">
       <nom>Théorie de l'information : algorithmique pour la cryptographie et le codage</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C31">
+    <unite id="ME5SIN-S51MA3C31" role="obligatoire">
       <nom>Introduction aux systèmes dynamiques et à la théorie ergodique</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51MA3C32">
+    <unite id="ME5SIN-S51MA3C32" role="obligatoire">
       <nom>Théorie de Ramsey</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S51PP4M1">
+    <unite id="ME5SIN-S51PP4M1" role="obligatoire">
       <nom>PPPE : communication scientifique en anglais</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
-    <unite id="ME5SIN-S53IN3C7">
+    <unite id="ME5SIN-S53IN3C7" role="obligatoire">
       <nom>Théorie de l'apprentissage et statistique non paramétrique</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-S60IN3B2">
+    <unite id="ME5SIN-S60IN3B2" role="obligatoire">
       <nom>Frameworks IoT</nom>
       <credits>3</credits>
       <resume>
@@ -2684,29 +2684,111 @@
       </resume>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
-    <unite id="ME5SIN-S60IN3B3">
+    <unite id="ME5SIN-S60IN3B3" role="obligatoire">
       <nom>Sécurité logicielle pour systèmes embarqués</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
     </unite>
-    <unite id="ME5SIN-HCOAU01">
+    <unite id="ME5SIN-HCOAU01" role="obligatoire">
       <nom>Introduction aux sciences cognitives</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-SSCAU01C">
+    <unite id="ME5SIN-SSCAU01C" role="obligatoire">
       <nom>Langage et cognition</nom>
       <credits>6</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
-    <unite id="ME5SIN-SSCAU02C">
+    <unite id="ME5SIN-SSCAU02C" role="obligatoire">
       <nom>Introduction à la neurobiologie</nom>
       <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+    </unite>
+    <unite id="ME5SIN-S40BI3Z2O" role="option">
+      <nom>Advanced biology (2 options among 3)</nom>
+      <credits>6</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AE"/>
+    </unite>
+    <unite id="ME5SIN-S51XX2M0" role="option">
+      <nom>6 crédits à choisir</nom>
+      <credits>6</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AF"/>
+    </unite>
+    <unite id="ME5SIN-S51XX2M01" role="option">
+      <nom>6 crédits à choisir en fonction du parcours</nom>
+      <credits>6</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AF"/>
+    </unite>
+    <unite id="ME5SIN-S51XX2M02" role="option">
+      <nom>9 crédits à choisir en fonction du parcours</nom>
+      <credits>9</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AF"/>
+    </unite>
+    <unite id="ME5SIN-S51XX2M1" role="option">
+      <nom>6 crédits à choisir</nom>
+      <credits>6</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AF"/>
+    </unite>
+    <unite id="ME5SIN-S51XX3A1" role="option">
+      <nom>3 crédits à choisir</nom>
+      <credits>3</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+    </unite>
+    <unite id="ME5SIN-S51XX3D3" role="option">
+      <nom>9 crédits à choisir S3 ILD</nom>
+      <credits>9</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+    </unite>
+    <unite id="ME5SIN-S51XX3D4" role="option">
+      <nom>9 crédits à choisir à Luminy</nom>
+      <credits>9</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+    </unite>
+    <unite id="ME5SIN-S51XX3D5" role="option">
+      <nom>9 crédits à choisir à St-Jérôme</nom>
+      <credits>9</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+    </unite>
+    <unite id="ME5SIN-S51XX3EOPT" role="option">
+      <nom>Option S3 IAAA - 12 crédits à choisir</nom>
+      <credits>12</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+    </unite>
+    <unite id="ME5SIN-OPS3IMD" role="option">
+      <nom>Options IMD (15 ECTS à choisir)</nom>
+      <credits>15</credits>
+      <resume/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
   </unites>
 </master>

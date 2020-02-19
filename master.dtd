@@ -24,6 +24,7 @@
 <!ATTLIST semestre id ID #IMPLIED>
 
 <!ATTLIST unite id ID #IMPLIED>
+<!ATTLIST unite role (obligatoire|option) #IMPLIED>
 <!ATTLIST ref-unite ref IDREF #REQUIRED>
 
 
