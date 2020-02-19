@@ -1,0 +1,181 @@
+<!DOCTYPE master SYSTEM "master.dtd">
+
+<master>
+    <intervenant id="massat">
+        <nom>Jean-Luc Massat</nom>
+        <email>jeanluc.massat@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <intervenant id="hamri">
+        <nom>Hamrit</nom>
+        <email>hamri@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <intervenant id="cherfaoui">
+        <nom>Farra Cherfaoui</nom>
+        <email>farra.cherfaoui@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <intervenant id="morin">
+        <nom>Remi Morrin</nom>
+        <email>remi.morrin@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <intervenant id="godard">
+        <nom>Emmanuel Godard</nom>
+        <email>emmanuel.godard@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <intervenant id="cepoi">
+        <nom>Victor Cepoi</nom>
+        <email>victor.cepoi@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <intervenant id="jegou">
+        <nom>Philippe Jegou</nom>
+        <email>philippe.jegou@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <intervenant id="thiel">
+        <nom>Edouard Thiel</nom>
+        <email>edouard.thiel@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <intervenant id="novelli">
+        <nom>Noël Novelli</nom>
+        <email>jeanluc.massat@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <intervenant id="dimolfetta">
+        <nom>Giuseppe Dimolfetta</nom>
+        <email>giuseppe.dimolfetta@&academie.domaine;</email>
+        <siteweb>http://jean-luc.massat.perso.luminy.univ-amu.fr</siteweb>
+    </intervenant>
+
+    <semestre id="S1">
+        <ue role="obligatoire">
+            <id>1</id>
+            <nom>Anglais S1</nom>
+            <credit>3</credit>
+            <resume>non disponible.</resume>
+            <plan>18h de TD</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="massat" />
+        </ue>
+        <ue role="obligatoire">
+            <id>SINAU02L</id>
+            <nom>GL</nom>
+            <credit>6</credit>
+            <resume>1) Versioning Git : Branches, Dépôts Lointains, Dépôts Lointains multiples avec branches, Workflows. 2) Building Gradle : Automatisation de compilation, de tests, de dépendances, langage de tâches interdépendantes. 3) Méthodes Les acteurs du logiciel. Cycles en V. Motivation et détail de chacune des phases. Forces et Faiblesses. Méthodes agiles. Motivations. Notamment XP et Scrum. Détail de chacune des réunions et instruments. Forces et Faiblesses. GL Libre : the cathedral and the bazaar 4) Documentation Du GL : Cahier des charges, Spécifications, Conception,… Du code : Javadoc, Commentaires, Wikis, Issues trackers 5) UML Motivations. Tous les principaux diagrammes (classe, object, séquence, com, package, états-transitions,…). 2 TD 6) Tests Types de Test (Blanche/Noire, Intégration (continue), Correction/Validation,…), Couverture (Exos sur les différents critères), Quand les faire (TDD…) Découverte du debugger eclipse Concepts d'invariants, d'assertions, d'analyse statique 7) Estimation Rapports PrixDev vs TempsDev vs LignesCode % observés de failed projects, causes observées % observés de bugs 8) Veille technologique sur l'actualité du GL</resume>
+            <plan>18h de CM - 18h de TD - 18h de TP</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="hamri" />
+        </ue>
+        <ue role="obligatoire">
+            <id>SINAU03L</id>
+            <nom>Complexite</nom>
+            <credit>6</credit>
+            <resume>Rappels sur les notions d'analyse de la complexité des algorithmes et des problèmes. Notion de problèmes (décision, recherche, dénombrement, énumération, optimisation). Bornes inférieures de complexité. Classes P et NP. Problèmes NP-complets. Méthodes de résolution des problèmes NP-Complets. Contenu en cours d'actualisation .</resume>
+            <plan> 20h de CM - 20h de TD - 14h de TP</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="dimolfetta" />
+        </ue>
+        <ue role="obligatoire">
+            <id>SINAU04L</id>
+            <nom>ISD</nom>
+            <credit>3</credit>
+            <resume>A travers trois cas d’utilisation, ce cours introduit la notion d’analyse de données, selon trois points de vue : le clustering (apprentissage non supervisé, ACP, kmeans, visualisation), la classification (apprentissage supervisé, notion d’erreur et de modèle, erreur de Bayes, kppv, généralisation et sur-apprentissage), et la régression (notion de causalité, notion d’erreur, protocoles d’évaluation). Sensibilisation aux aspects éthiques (GAFAM). L’objectif est de sensibiliser les étudiants aux techniques de base de l’analyse de données et de l’apprentissage, avec des liens vers approches probabilistes (Bayes), statistiques, et modes d’évaluation et de visualisation. On partira de données réelles, on illustrera de fait la difficulté du nettoyage de données en amont de tout le reste.</resume>
+            <plan>9h de CM - 9h de TD - 9h de TP</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="cherfaoui" />
+        </ue>
+        <ue role="obligatoire">
+            <id>SINAU05L</id>
+            <nom>POC</nom>
+            <credit>3</credit>
+            <resume> Depuis la généralisation des architectures multi-cœurs, la programmation parallèle est devenue incontournable pour développer des applications exploitant pleinement les capacités de traitement offertes par les ordinateurs actuels. Elle est aussi un moyen de simplifier la structure du logiciel en l'organisant sous la forme de tâches distinctes qui interagissent entre elles afin de répondre aux requêtes de l'utilisateur (ou de l'environnement). Cette UE présente aux étudiants du M1 les principales difficultés de la programmation multi-thread et les techniques classiques permettant de développer un code correct et performant . Tout d'abord, les instructions de base liées à la classe Thread en Java sont introduites avec les concepts sous-jacents de verrou et de variable de condition . L'effet de ces instructions sur l'état d'un thread est illustré sur des exemples simples s'appuyant sur des diagrammes de séquence. Les notions d'indépendance et d' atomicité permettent ensuite de spécifier précisément les problèmes classiques de synchronisation en séparant le besoin d'exclusion mutuelle des contraintes d'attente particulières. L'approche recommandée pour débuter est celle de la conception et de la programmation de moniteurs (à la Hoare), étudiée sur plusieurs exemples classiques. Les outils dédiés à la programmation parallèle en Java sont également présentés en cours et exploités en Travaux Pratiques : locks divers, pools de threads, collections synchronisées ou concurrentes, objets atomiques, etc. Les difficultés propres à la programmation sans verrou sont illustrées par la construction de structures de données simples et de verrous performants. Enfin, un aperçu du modèle mémoire Java permet d'initier les étudiants à la notion de programme «  bien synchronisé » et aux risques d'exécutions inconsistantes séquentiellement du fait des optimisations de codes réalisées lors de la compilation ou de l'exécution. Description en cours d'actualisation.</resume>
+            <plan>10h de CM - 8h de TD - 8h de TP</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="morin" />
+        </ue>
+        <ue role="obligatoire">
+            <id>SINAU06L</id>
+            <nom>Réseaux</nom>
+            <credit>4</credit>
+            <resume>Architecture en couches, standard OSI Couche physique Couche liaison de Données Réseau IP Algorithmes de routage, routage IP Protocole TCP/IP Couche Application : HTTP, SMTP, FTP,… Bases des protocoles cryptographiques (terminologie, architecture à clef publique). Introduction à la Sécurité des réseaux. Contenu en cours d'actualisation .</resume>
+            <plan>12h de CM - 12h de TD - 14h de TP</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="godard" />
+        </ue>
+        <ue role="obligatoire">
+            <id>SINAU07L</id>
+            <nom>ARO</nom>
+            <credit>3</credit>
+            <resume>Programmation linéaire. Notions et algorithmes de flots. Applications (couplage, affectation, transport,…) Programmation dynamique (sac à dos, ordonnancement,…) Algorithmes à performance garantie Contenu en cours d'actualisation .</resume>
+            <plan>10h de CM - 8h de TD - 9h de TP</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="cepoi" />
+        </ue>
+        <ue role="obligatoire">
+            <id>SINAU08L</id>
+            <nom>ERDI</nom>
+            <credit>2</credit>
+            <resume>Description en cours de rédaction.</resume>
+            <plan>16h de CM et encore</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="jegou" />
+        </ue>
+        
+    </semestre>
+
+    <semestre id="S2">
+        <ue role="obligatoire">
+            <id>SINBU01L</id>
+            <nom>COMM</nom>
+            <credit>3</credit>
+            <resume>Chapitre 1 : Théories de la communication : La théorie mathématique de l’information (Shannon, Weaver), la cybernétique (Wiener) La théorie de Palo Alto (Bateson, Watzlawick) et la théorie de la communication par les processus (Mucchielli) Chapitre 2 : Rôle de l’interculturalité dans le travail en équipe : L’enquête interculturelle de Hofstede pour IBM La gestuelle et le paralangage et la proxémie dans le monde (Hall) Chapitre 3 : Notions de management et de travail collaboratif Le travail collaboratif vs le travail coopératif La notion de groupes Les compétences managériales Contenu en cours d'actualisation .</resume>
+            <plan>9h de CM - 9h de TD - 9h de TP</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="thiel" />
+        </ue>
+        <ue role="option">
+            <id>SIINBU07L</id>
+            <nom>IHM</nom>
+            <credit>3</credit>
+            <resume>Qt / programmation événementielle informatique graphique/OpenGL Ergonomie/Responsive mise en niveau en C++</resume>
+            <plan>19h de CM - 9h de TD - 9h de TP</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="novelli" />
+            <ref-intervenant ref="thiel" />
+        </ue>
+        <ue role="option">
+            <id>SINAU08L</id>
+            <nom>ICQ</nom>
+            <credit>3</credit>
+            <resume>Cette unité d'enseignement a pour vocation de faire découvrir aux étudiants les spécificités et les possibilités qu'ouvrent le traitement quantique de l’information et de leur donner les bases pour décrire et analyser des circuits quantiques simples. On montrera comment la mise au point d'algorithmes quantiques permet de résoudre certains problèmes de façon exponentiellement plus efficace que les algorithmes classiques traditionnels (recherche, tri,…), et notamment le problème de la factorisation des grands nombres. Il s’en suit que la mise au point d'un ordinateur quantique de grande taille remettrait en cause les algorithmes à clés publiques aujourd'hui utilisés pour sécuriser Internet (d’où la nécessité d’une post-quantum cryptography). On introduira également les idées principales du domaine de la cryptographie quantique. On évoquera les possibilités offertes par ce nouveau paradigme dans d’autres champs de l’informatique, tels que le machine learning. Contenu  : Fondamentaux du calcul quantique I (linéarité de la théorie, qubits, superpositions, intrication) ; Fondamentaux du calcul quantique II (portes quantiques et circuits) Algorithme quantique de Grover ; (iii) Algorithme de Shor et Cryptage RSA ; Éléments de cryptographie quantique.</resume>
+            <plan>9h de CM - 9h de TD - 9h de TP</plan>
+            <lieu>&academie.nom; Luminy</lieu>
+            <ref-intervenant ref="dimolfetta" />
+        </ue>
+
+    </semestre>
+        
+    <parcours>
+        <ref-intervenant ref="massat" />
+        <nom>ILD</nom>
+        <resume>L’objectif de ce parcours est de former des informaticiens qui soient capables à la fois de travailler sur les problématiques dudéveloppement logiciel (spécification, conception, réalisation,qualité, tests, plateforme JEE et WEB) et sur les problématiquesde la modélisation et du traitement de données (administration,stockage, intégration, visualisation, analyse).</resume>
+        <debouché>« Data scientist » ou « Data analyst »</debouché>
+        <debouché>Ingénieur R&amp;D</debouché>
+        <ref-semestre ref="S1"/>
+        <ref-semestre ref="S2"/>
+    </parcours>
+</master>

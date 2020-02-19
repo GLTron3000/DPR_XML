@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!ENTITY academie.nom     "Aix-Marseille">
+<!ENTITY academie.domaine "univ-amu.fr">
+
+<!ELEMENT master (intervenant+, semestre+, parcours+)>
+<!ELEMENT intervenant (nom, email, siteweb)>
+<!ELEMENT semestre    (ue+)>
+
+<!ELEMENT parcours    (ref-intervenant+, nom, resume, debouché+, ref-semestre+)>
+<!ELEMENT ue          (id, nom, credit, resume, plan, lieu, ref-intervenant+)>
+
+<!ATTLIST semestre id ID #IMPLIED>
+<!ATTLIST ref-semestre ref IDREF #REQUIRED>
+
+<!ATTLIST intervenant id ID #IMPLIED>
+<!ATTLIST ref-intervenant ref IDREF #REQUIRED>
+
+<!ATTLIST ue role (obligatoire|option) #IMPLIED>
+
+
+<!ELEMENT ref-intervenant (#PCDATA)>
+<!ELEMENT ref-semestre    (#PCDATA)>
+
+<!ELEMENT credit    (#PCDATA)>
+<!ELEMENT resume    (#PCDATA|b|i|tt|a|tr|table|li|ul|p)*>
+<!ELEMENT plan      (#PCDATA)>
+<!ELEMENT lieu      (#PCDATA)>
+<!ELEMENT debouché  (#PCDATA)>
+
+<!ELEMENT nom       (#PCDATA)>
+<!ELEMENT id        (#PCDATA)>
+
+<!ELEMENT email     (#PCDATA)>
+<!ELEMENT siteweb   (#PCDATA)>
