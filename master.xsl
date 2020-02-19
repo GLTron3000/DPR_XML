@@ -6,6 +6,7 @@
     <xsl:template match="/">
         <html>
         <xsl:copy-of select="$head"/>
+        <xsl:copy-of select="$navbar"/>
         <body>
             <menu>
                 <h1>Intervenants</h1>
@@ -25,7 +26,7 @@
                 <hr/>
                 <h1>Unites</h1>
                 <ul>
-                    <xsl:apply-templates select="//ue" mode="menuPages"/>
+                    <xsl:apply-templates select="//unite" mode="menuPages"/>
                 </ul>
             </menu>
             
@@ -42,17 +43,53 @@
 
     <xsl:variable name="head">
         <head>
-            <link rel="stylesheet" href="../style.css" type="text/css" />
-            <link rel="stylesheet" href="../normalize.css" type="text/css" />
-            <title>SuperMaster2k20</title>
+            <meta charset="utf-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <title>UltraMaster2K20</title>
+            <link rel="stylesheet" href="bulma.min.css" />
+            <link rel="icon" href="favicon.ico" type="image/x-icon" />
+            <script src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" />
+            <script src="script.js" />
         </head>
+    </xsl:variable>
+
+    <xsl:variable name="navbar">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                    <img src="logo.png" width="120" />
+                </a>
+            
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="index.html">Accueil</a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Parcours</a>
+                        <div class="navbar-dropdown">
+                            <xsl:for-each select="//parcour">
+                                <a class="navbar-item" href="{@id}.html"><xsl:copy-of select="nom-court"/></a>
+                            </xsl:for-each>
+                        </div>
+                    </div>
+                    <a class="navbar-item" href="unites.html">Unités d'enseignement</a>
+                    <a class="navbar-item" href="intervenants.html">Intervenants</a>
+                </div>
+            </div>
+        </nav>
     </xsl:variable>
 
     <xsl:template match="intervenant" mode="menuPages">
         <li><a href="{@id}.html"> <xsl:value-of select="nom"/></a></li>
     </xsl:template>
 
-    <xsl:template match="ue" mode="menuPages">
+    <xsl:template match="unite" mode="menuPages">
         <li><a href="{id}.html"> <xsl:value-of select="nom"/></a></li>
     </xsl:template>
 
@@ -71,7 +108,7 @@
     
 
     <xsl:template name="unitesPages">
-        <xsl:for-each select="//ue">
+        <xsl:for-each select="//unite">
             <xsl:document href="{id}.html">  
                 <html>
                     <xsl:copy-of select="$head"/>
@@ -89,7 +126,7 @@
         </xsl:for-each>
     </xsl:template>
 
-    <xsl:variable name="ue"  select="//ue[//intervenant/@id = ref-intervenant/@ref]" />
+    <xsl:variable name="unite"  select="//unite[//intervenant/@id = ref-intervenant/@ref]" />
 
     <xsl:template name="intervenantsPages">
         <xsl:for-each select="//intervenant">
@@ -105,9 +142,6 @@
                         <h3>Site: <xsl:value-of select="siteweb"/></h3>
                         <hr/>
                         <h2>Unités enseignées</h2>
-                        <xsl:for-each select="">
-                            <a href="{id}.html"><xsl:value-of select="nom"/></a>
-                        </xsl:for-each>
                         <hr/>
                     </body>
                 </html>
@@ -144,7 +178,7 @@
                         </form>
                         <h1>Semestre:  <xsl:value-of select="@id"/></h1>
                         <ul>
-                            <xsl:apply-templates select="ue" mode="menuPages"/>
+                            <xsl:apply-templates select="unite" mode="menuPages"/>
                         </ul>
                         <hr/>
                     </body>

@@ -54,6 +54,9 @@
                <nom>
                   <xsl:value-of select="info[@nom='nom']/@value"/>
                </nom>
+               <nom-court>
+                  <xsl:value-of select="info[@nom='nom_court']/@value"/>
+               </nom-court>
                <resume>
                   <xsl:copy-of select="info[@nom='objectifs']/*"/>
                </resume>

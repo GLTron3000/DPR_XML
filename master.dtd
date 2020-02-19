@@ -9,7 +9,7 @@
 <!ELEMENT unites (unite+)>
 
 <!ELEMENT intervenant (nom, prenom, email)>
-<!ELEMENT parcour (nom, resume, ref-intervenant+)>
+<!ELEMENT parcour (nom, nom-court, resume, ref-intervenant+)>
 <!ELEMENT semestre (nom, ref-unite+, ref-parcour+)>
 <!ELEMENT unite (nom, credits, resume, ref-intervenant*, ref-parcour+)>
 
@@ -38,6 +38,7 @@
 <!ELEMENT lieu            (#PCDATA)>
 
 <!ELEMENT nom             (#PCDATA)>
+<!ELEMENT nom-court       (#PCDATA)>
 
 <!ELEMENT prenom          (#PCDATA)>
 <!ELEMENT email           (#PCDATA)>

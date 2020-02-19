@@ -1,4 +1,0 @@
-//*[@id='day673'] instance of element(jour)
-//jour[@id='day4']/@suivant instance of attribute()
-/siecle/annee[numero=1950]//jour, //jour[numero-semaine=1]
-(/siecle/annee[numero=1950]//jour, //jour[numero-semaine=1])[numero cast as xs:integer lt 5]/nom

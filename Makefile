@@ -12,6 +12,7 @@ xsd :
 
 web :
 	mkdir -p $(WEBDIR)
+	cp -r resources/* www
 	xsltproc -o $(WEBDIR)/index.html master.xsl master.xml
 
 tidy : 
