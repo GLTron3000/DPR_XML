@@ -3,6 +3,7 @@
 <!ELEMENT master (infos, intervenants, parcours, semestres, unites)>
 
 <!ELEMENT infos (nom, resume, ref-parcour+, ref-intervenant+)>
+<!ELEMENT groupes (groupe*)>
 <!ELEMENT intervenants (intervenant+)>
 <!ELEMENT parcours (parcour+)>
 <!ELEMENT semestres (semestre+)>
@@ -12,8 +13,10 @@
 <!ELEMENT parcour (nom, nom-court, resume, ref-intervenant+)>
 <!ELEMENT semestre (nom, ref-unite+, ref-parcour+)>
 <!ELEMENT unite (nom, credits, resume, ref-intervenant*, ref-parcour+)>
+<!ELEMENT groupe (nom, credits, ref-unite*, ref-parcour*)>
 
 <!ATTLIST infos id ID #IMPLIED>
+<!ATTLIST groupe id ID #IMPLIED>
 
 <!ATTLIST intervenant id ID #IMPLIED>
 <!ATTLIST ref-intervenant ref IDREF #REQUIRED>
