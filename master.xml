@@ -2718,12 +2718,25 @@
       <nom>Advanced biology (2 options among 3)</nom>
       <credits>6</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-S40BI3Z2A"/>
+      <ref-unite ref="ME5SIN-S40BI3Z2B"/>
+      <ref-unite ref="ME5SIN-S40BI3Z4"/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
     <unite id="ME5SIN-S51XX2M0" role="option">
       <nom>6 crédits à choisir</nom>
       <credits>6</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-S51IN2A2"/>
+      <ref-unite ref="ME5SIN-S51IN2A7"/>
+      <ref-unite ref="ME5SIN-S51IN2B1"/>
+      <ref-unite ref="ME5SIN-S51IN2C1"/>
+      <ref-unite ref="ME5SIN-S51IN2F1"/>
+      <ref-unite ref="ME5SIN-S51IN2F2"/>
+      <ref-unite ref="ME5SIN-S51IN2M03"/>
+      <ref-unite ref="ME5SIN-S51IN2M04"/>
+      <ref-unite ref="ME5SIN-S51IN2M05"/>
+      <ref-unite ref="ME5SIN-S51IN2M06"/>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
@@ -2734,6 +2747,8 @@
       <nom>6 crédits à choisir en fonction du parcours</nom>
       <credits>6</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-S51IN2M07"/>
+      <ref-unite ref="ME5SIN-S51IN2M08"/>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
@@ -2744,6 +2759,11 @@
       <nom>9 crédits à choisir en fonction du parcours</nom>
       <credits>9</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-AA120"/>
+      <ref-unite ref="ME5SIN-AA200"/>
+      <ref-unite ref="ME5SIN-AA300"/>
+      <ref-unite ref="ME5SIN-S51YY2M1"/>
+      <ref-unite ref="ME5SIN-S51YY2M2"/>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
@@ -2754,6 +2774,8 @@
       <nom>6 crédits à choisir</nom>
       <credits>6</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-S51IN2M01"/>
+      <ref-unite ref="ME5SIN-SUP100"/>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
@@ -2764,37 +2786,158 @@
       <nom>3 crédits à choisir</nom>
       <credits>3</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-S51IN3A8"/>
+      <ref-unite ref="ME5SIN-S51IN3C16O"/>
+      <ref-unite ref="ME5SIN-S60IN3B3"/>
       <ref-parcour ref="ME5SIN-PRSIN5AA"/>
     </unite>
     <unite id="ME5SIN-S51XX3D3" role="option">
       <nom>9 crédits à choisir S3 ILD</nom>
       <credits>9</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-S51YY3D1"/>
+      <ref-unite ref="ME5SIN-S51YY3D2"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
     <unite id="ME5SIN-S51XX3D4" role="option">
       <nom>9 crédits à choisir à Luminy</nom>
       <credits>9</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-S51IN3A2"/>
+      <ref-unite ref="ME5SIN-S51IN3D11"/>
+      <ref-unite ref="ME5SIN-S51IN3D13"/>
+      <ref-unite ref="ME5SIN-S51IN3D20"/>
+      <ref-unite ref="ME5SIN-S51IN3D21"/>
+      <ref-unite ref="ME5SIN-S51IN3D22"/>
+      <ref-unite ref="ME5SIN-S60IN3B2"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
     <unite id="ME5SIN-S51XX3D5" role="option">
       <nom>9 crédits à choisir à St-Jérôme</nom>
       <credits>9</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-S51IN3D11"/>
+      <ref-unite ref="ME5SIN-S51IN3D13"/>
+      <ref-unite ref="ME5SIN-S51IN3D20"/>
+      <ref-unite ref="ME5SIN-S51IN3D23"/>
+      <ref-unite ref="ME5SIN-S51IN3D24"/>
       <ref-parcour ref="ME5SIN-PRSIN5AB"/>
     </unite>
     <unite id="ME5SIN-S51XX3EOPT" role="option">
       <nom>Option S3 IAAA - 12 crédits à choisir</nom>
       <credits>12</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-HCOAU01"/>
+      <ref-unite ref="ME5SIN-S51IN3E06"/>
+      <ref-unite ref="ME5SIN-S51IN3E07"/>
+      <ref-unite ref="ME5SIN-S51IN3E08"/>
+      <ref-unite ref="ME5SIN-S51IN3E09"/>
+      <ref-unite ref="ME5SIN-S53IN3C7"/>
+      <ref-unite ref="ME5SIN-SSCAU01C"/>
+      <ref-unite ref="ME5SIN-SSCAU02C"/>
       <ref-parcour ref="ME5SIN-PRSIN5AC"/>
     </unite>
     <unite id="ME5SIN-OPS3IMD" role="option">
       <nom>Options IMD (15 ECTS à choisir)</nom>
       <credits>15</credits>
       <resume/>
+      <ref-unite ref="ME5SIN-S51IN3C11"/>
+      <ref-unite ref="ME5SIN-S51IN3C12"/>
+      <ref-unite ref="ME5SIN-S51IN3C13O"/>
+      <ref-unite ref="ME5SIN-S51IN3C14O"/>
+      <ref-unite ref="ME5SIN-S51IN3C15O"/>
+      <ref-unite ref="ME5SIN-S51IN3C16O"/>
+      <ref-unite ref="ME5SIN-S51IN3C17"/>
+      <ref-unite ref="ME5SIN-S51IN3C18"/>
+      <ref-unite ref="ME5SIN-S51IN3C19"/>
+      <ref-unite ref="ME5SIN-S51IN3C20"/>
+      <ref-unite ref="ME5SIN-S51IN3C21"/>
+      <ref-unite ref="ME5SIN-S51IN3C22"/>
+      <ref-unite ref="ME5SIN-S51MA3C23O"/>
+      <ref-unite ref="ME5SIN-S51MA3C24O"/>
+      <ref-unite ref="ME5SIN-S51MA3C25"/>
+      <ref-unite ref="ME5SIN-S51MA3C26"/>
+      <ref-unite ref="ME5SIN-S51MA3C27"/>
+      <ref-unite ref="ME5SIN-S51MA3C28"/>
+      <ref-unite ref="ME5SIN-S51MA3C29"/>
+      <ref-unite ref="ME5SIN-S51MA3C30"/>
+      <ref-unite ref="ME5SIN-S51MA3C31"/>
+      <ref-unite ref="ME5SIN-S51MA3C32"/>
       <ref-parcour ref="ME5SIN-PRSIN5AD"/>
     </unite>
   </unites>
+  <groupes>
+    <groupe id="ME5SIN-AA120">
+      <nom>Parcours IMD</nom>
+      <credits>9</credits>
+      <ref-unite ref="ME5SIN-S51IN2F1"/>
+      <ref-unite ref="ME5SIN-S51IN2F2"/>
+      <ref-unite ref="ME5SIN-S51IN2F3"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AF"/>
+    </groupe>
+    <groupe id="ME5SIN-AA200">
+      <nom>Parcours FSI</nom>
+      <credits>9</credits>
+      <ref-unite ref="ME5SIN-S51IN2A5"/>
+      <ref-unite ref="ME5SIN-S51IN2A6"/>
+      <ref-unite ref="ME5SIN-S51IN2A7"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AF"/>
+    </groupe>
+    <groupe id="ME5SIN-AA300">
+      <nom>Parcours GIG</nom>
+      <credits>9</credits>
+      <ref-unite ref="ME5SIN-S51IN2B1"/>
+      <ref-unite ref="ME5SIN-S51IN2B2"/>
+      <ref-unite ref="ME5SIN-S51IN2B3"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AF"/>
+    </groupe>
+    <groupe id="ME5SIN-S51YY2M1">
+      <nom>Parcours IAAA</nom>
+      <credits>9</credits>
+      <ref-unite ref="ME5SIN-S51IN2A1"/>
+      <ref-unite ref="ME5SIN-S51IN2A2"/>
+      <ref-unite ref="ME5SIN-S51IN2A4"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AF"/>
+    </groupe>
+    <groupe id="ME5SIN-S51YY2M2">
+      <nom>Parcours ILD</nom>
+      <credits>9</credits>
+      <ref-unite ref="ME5SIN-S51IN2A5"/>
+      <ref-unite ref="ME5SIN-S51IN2C1"/>
+      <ref-unite ref="ME5SIN-S51IN2C2"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AA"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AC"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AD"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AF"/>
+    </groupe>
+    <groupe id="ME5SIN-S51YY3D1">
+      <nom>Sur le site de Luminy</nom>
+      <credits>9</credits>
+      <ref-unite ref="ME5SIN-S51XX3D4"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+    </groupe>
+    <groupe id="ME5SIN-S51YY3D2">
+      <nom>Sur le site de St-Jérôme</nom>
+      <credits>9</credits>
+      <ref-unite ref="ME5SIN-S51XX3D5"/>
+      <ref-parcour ref="ME5SIN-PRSIN5AB"/>
+    </groupe>
+  </groupes>
 </master>
