@@ -1,42 +1,39 @@
 <xsl:stylesheet
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    version="1.0">
+    version="2.0">
     <xsl:output method="html" encoding="utf-8" indent="yes" />
 
     <xsl:template match="/">
+        <xsl:apply-templates />
         <html>
         <xsl:copy-of select="$head"/>
-        <xsl:copy-of select="$navbar"/>
-        <body>
-            <menu>
-                <h1>Intervenants</h1>
-                <ul>
-                    <xsl:apply-templates select="//intervenant" mode="menuPages"/>
-                </ul>
-                <hr/>
-                <h1>Parcours</h1>
-                <ul>
-                    <xsl:apply-templates select="//parcours" mode="menuPages"/>
-                </ul>
-                <hr/>
-                <h1>Semestres</h1>
-                <ul>
-                    <xsl:apply-templates select="//semestre" mode="menuPages"/>
-                </ul>
-                <hr/>
-                <h1>Unites</h1>
-                <ul>
-                    <xsl:apply-templates select="//unite" mode="menuPages"/>
-                </ul>
-            </menu>
-            
-            <xsl:call-template name="intervenantsPages" />
-            
-            <xsl:call-template name="unitesPages" />
+        <body>     
+            <xsl:copy-of select="$navbar"/>      
+            <section class="section">
+                <div class="container">
+                    <h1 class="title is-3">Master <xsl:copy-of select="master/infos/nom"/></h1>
 
-            <xsl:call-template name="parcoursPages" />
+                    <hr/>
+                    <h2 class="title is-5">Résumé</h2>
+                    <xsl:copy-of select="master/infos/resume"/>
 
-            <xsl:call-template name="semestresPages" />
+                    <hr/>
+                    <h2 class="title is-5">Parcours types</h2>
+                    <div class="list is-hoverable">
+                        <xsl:for-each select="//parcour">
+                            <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom-court"/></a>
+                        </xsl:for-each>
+                    </div>
+
+                    <hr/>
+                    <h2 class="title is-5">Responsables</h2>
+                    <div class="list is-hoverable">
+                        <xsl:for-each select="//intervenant[@id = /master/infos/ref-intervenant/@ref]">
+                            <a href="{@id}.html" class="list-item"><xsl:copy-of select="prenom"/> <xsl:copy-of select="nom"/></a>
+                        </xsl:for-each>
+                    </div>
+                </div>
+            </section>
         </body>
         </html>
     </xsl:template>
@@ -60,14 +57,14 @@
                     <img src="logo.png" width="120" />
                 </a>
             
-                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
                 </a>
             </div>
             
-            <div id="navbarBasicExample" class="navbar-menu">
+            <div id="navbarBasic" class="navbar-menu">
                 <div class="navbar-start">
                     <a class="navbar-item" href="index.html">Accueil</a>
                     <div class="navbar-item has-dropdown is-hoverable">
@@ -85,105 +82,141 @@
         </nav>
     </xsl:variable>
 
+
+
+
+
     <xsl:template match="intervenant" mode="menuPages">
         <li><a href="{@id}.html"> <xsl:value-of select="nom"/></a></li>
     </xsl:template>
 
     <xsl:template match="unite" mode="menuPages">
-        <li><a href="{id}.html"> <xsl:value-of select="nom"/></a></li>
-    </xsl:template>
+        <li><a href="{@id}.html"> <xsl:value-of select="nom"/></a></li>
+    </xsl:template>    
 
-    <xsl:template match="parcours" mode="menuPages">
-        <li><a href="{nom}.html"> <xsl:value-of select="nom"/></a></li>
-    </xsl:template>
-
-    <xsl:template match="semestre" mode="menuPages">
-        <li><a href="{@id}.html"> <xsl:value-of select="@id"/></a></li>
-    </xsl:template>
-
-    <xsl:template match="ref-intervenant" mode="ref">
-        <a href="{@ref}.html"> intervenant</a>
-    </xsl:template>
-
-    
-
-    <xsl:template name="unitesPages">
-        <xsl:for-each select="//unite">
-            <xsl:document href="{id}.html">  
+    <xsl:template match="unites">
+        <xsl:for-each select="unite">
+            <xsl:result-document href="{@id}.html">  
                 <html>
                     <xsl:copy-of select="$head"/>
                     <body>
-                    <form action="index.html">
-                        <input type="submit" value="Retour" />
-                    </form>
-                    <h1>Unite: <xsl:value-of select="nom"/></h1>
-                    <p id="{id}"><xsl:value-of select="string(resume)" /></p>
-                    <xsl:apply-templates select="./ref-intervenant" mode="ref"/>
-                    <hr/>
+                    <xsl:copy-of select="$navbar"/>  
+                        <section class="section">
+                            <div class="container">
+                                <h1 class="title"><xsl:value-of select="nom"/></h1>
+                                <h2 class="subtitle"><xsl:value-of select="credits"/> crédits <xsl:value-of select="@role"/></h2>
+                                <hr/>
+                                <h2 class="title is-5">Résumé</h2>
+                                <xsl:copy-of select="resume"/>
+                                <hr/>
+                                <h2 class="title is-5">Responsables</h2>
+                                <div class="list is-hoverable">
+                                    <xsl:for-each select="//intervenant[@id = current()/ref-intervenant/@ref]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="prenom"/> <xsl:copy-of select="nom"/></a>
+                                    </xsl:for-each>
+                                </div>
+                            </div>
+                        </section>
                     </body>
                 </html>
-            </xsl:document>
+            </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
 
     <xsl:variable name="unite"  select="//unite[//intervenant/@id = ref-intervenant/@ref]" />
 
-    <xsl:template name="intervenantsPages">
-        <xsl:for-each select="//intervenant">
-            <xsl:document href="{@id}.html">  
+    <xsl:template match="intervenants">
+        <xsl:for-each select="intervenant">
+            <xsl:result-document href="{@id}.html">  
                 <html>
                     <xsl:copy-of select="$head"/>
                     <body>
-                        <form action="index.html">
-                            <input type="submit" value="Retour" />
-                        </form>
-                        <h1>Nom: <xsl:value-of select="nom"/></h1>
-                        <h3>Email: <xsl:value-of select="email"/></h3>
-                        <h3>Site: <xsl:value-of select="siteweb"/></h3>
-                        <hr/>
-                        <h2>Unités enseignées</h2>
-                        <hr/>
+                        <xsl:copy-of select="$navbar"/>  
+                        <section class="section">
+                            <div class="container">
+                                <h1 class="title"><xsl:copy-of select="prenom"/> <xsl:copy-of select="nom"/></h1>
+                                <h3>Email: <xsl:value-of select="email"/></h3>
+                                <hr/>
+                                <h2 class="title is-4">Unités enseignées</h2>
+                                <div class="list is-hoverable">
+                                    <xsl:for-each select="//unite[ref-intervenant/@ref = current()/@id]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom"/></a>
+                                    </xsl:for-each>
+                                </div>
+                                <hr/>
+                            </div>
+                        </section>
                     </body>
                 </html>
-            </xsl:document>
+            </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
 
-    <xsl:template name="parcoursPages">
-        <xsl:for-each select="//parcours">
-            <xsl:document href="{nom}.html">  
+    <xsl:template match="parcours">
+        <xsl:for-each select="parcour">
+            <xsl:result-document href="{@id}.html" method="html">  
                 <html>
                     <xsl:copy-of select="$head"/>
                     <body>
-                        <form action="index.html">
-                            <input type="submit" value="Retour" />
-                        </form>
-                        <h1>Nom: <xsl:value-of select="nom"/></h1>
-                        <p>Resume: <xsl:value-of select="resume"/></p>
-                        <hr/>
+                        <xsl:copy-of select="$navbar"/>  
+                        <section class="section">
+                            <div class="container">
+                                <h1 class="title"><xsl:value-of select="nom"/></h1>
+                                <hr/>
+                                <h2 class="title is-5">Résumé</h2>
+                                <xsl:copy-of select="resume"/>
+                                <hr/>
+                                <h2 class="title is-5">Semestres</h2>
+                                <div class="list is-hoverable">
+                                    <xsl:for-each select="//semestre[ref-parcour/@ref = current()/@id]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom"/></a>
+                                    </xsl:for-each>
+                                </div>
+                                <hr/>
+                                <h2 class="title is-5">Responsables</h2>
+                                <div class="list is-hoverable">
+                                    <xsl:for-each select="//intervenant[@id = current()/ref-intervenant/@ref]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="prenom"/> <xsl:copy-of select="nom"/></a>
+                                    </xsl:for-each>
+                                </div>
+                            </div>
+                        </section>
                     </body>
                 </html>
-            </xsl:document>
+            </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
 
-    <xsl:template name="semestresPages">
-        <xsl:for-each select="//semestre">
-            <xsl:document href="{@id}.html">  
+    <xsl:template match="semestres">
+        <xsl:for-each select="semestre">
+            <xsl:result-document href="{@id}.html" method="html">  
                 <html>
                     <xsl:copy-of select="$head"/>
                     <body>
-                        <form action="index.html">
-                            <input type="submit" value="Retour" />
-                        </form>
-                        <h1>Semestre:  <xsl:value-of select="@id"/></h1>
-                        <ul>
-                            <xsl:apply-templates select="unite" mode="menuPages"/>
-                        </ul>
-                        <hr/>
+                        <xsl:copy-of select="$navbar"/>  
+                        <section class="section">
+                            <div class="container">
+                                <h1 class="title"><xsl:value-of select="nom"/></h1>
+                                <hr/>
+                                <h2 class="title is-5">Unités</h2>
+                                <div class="list is-hoverable">
+                                    <xsl:for-each select="//unite[@id = current()/ref-unite/@ref]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom"/></a>
+                                    </xsl:for-each>
+                                </div>
+                                <hr/>
+                                <h2 class="title is-5">Parcours</h2>
+                                <div class="list is-hoverable">
+                                    <xsl:for-each select="//parcour[@id = current()/ref-parcour/@ref]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom"/></a>
+                                    </xsl:for-each>
+                                </div>
+                                <hr/>
+                            </div>
+                        </section>
                     </body>
                 </html>
-            </xsl:document>
+            </xsl:result-document>
         </xsl:for-each>
     </xsl:template>
 
