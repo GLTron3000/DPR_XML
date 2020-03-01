@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!ELEMENT master (infos, parcours, intervenants, unites)> <!-- pas sur de mettre intervenants et unites dans master -->
+
+<!ELEMENT infos (info*)>
+<!ELEMENT info (nom, resume)>
+
+<!ELEMENT parcours (parcour+)>
+<!ELEMENT parcour (info, semestres, ref-intervenant+)> <!-- ref-intervenant pour le responsable du parcour -->
+<!ATTLIST parcour id ID #IMPLIED>
+
+<!ELEMENT ref-parcour     (#PCDATA)>
+<!ATTLIST ref-parcour ref IDREF #REQUIRED>
+
+<!ELEMENT semestres (semestre+)>
+<!ELEMENT semestre (nom, ref-unite+, ref-parcour+)>
+<!ATTLIST semestre id ID #IMPLIED>
+
+<!ELEMENT ref-semestre (#PCDATA)>
+<!ATTLIST ref-semestre ref IDREF #REQUIRED>
+
+<!ELEMENT intervenants (intervenant+)>
+<!ELEMENT intervenant (nom, prenom, email)>
+<!ATTLIST intervenant id ID #IMPLIED>
+
+<!ELEMENT ref-intervenant (#PCDATA)>
+<!ATTLIST ref-intervenant ref IDREF #REQUIRED>
+
+<!ELEMENT unites (unite+)>
+<!ELEMENT unite (nom, info, credits, ref-intervenant*, ref-semestre+)>
+<!ATTLIST unite id ID #IMPLIED>
+<!ATTLIST unite role (obligatoire|option) #IMPLIED>
+
+<!ELEMENT ref-unite       (#PCDATA)>
+<!ATTLIST ref-unite ref IDREF #REQUIRED>
+
+
+<!ELEMENT credits         (#PCDATA)>
+<!ELEMENT resume          (p|ul|ol)*>
+
+<!ELEMENT nom             (#PCDATA)>
+<!ELEMENT nom-court       (#PCDATA)>
+
+<!ELEMENT prenom          (#PCDATA)>
+<!ELEMENT email           (#PCDATA)>
+
+<!ELEMENT ol			  (li*) >
+<!ELEMENT ul			  (li*) >
+<!ELEMENT li			  (t|b|i|u|ul)* >
+<!ELEMENT p				  (t|b|i|u|br)* >
+<!ELEMENT t				  (#PCDATA) >
+<!ELEMENT b				  (#PCDATA) >
+<!ELEMENT i				  (#PCDATA) >
+<!ELEMENT u				  (#PCDATA) >
