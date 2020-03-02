@@ -98,15 +98,6 @@
                                 <hr/>
                                 <h2 class="title is-5">Résumé</h2>
                                 <xsl:copy-of select="resume"/>
-                                <xsl:if test="@role = 'option'">
-                                    <hr/>
-                                    <h2 class="title is-5">Unités a choisir</h2>
-                                    <div class="list is-hoverable">
-                                        <xsl:for-each select="//unite[@id = current()/ref-unite/@ref]">
-                                            <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom"/> (<xsl:copy-of select="credits"/> crédits)</a>
-                                        </xsl:for-each>
-                                    </div>
-                                </xsl:if>
                                 <hr/>
                                 <h2 class="title is-5">Parcours</h2>
                                 <div class="list is-hoverable">
@@ -119,6 +110,42 @@
                                 <div class="list is-hoverable">
                                     <xsl:for-each select="//intervenant[@id = current()/ref-intervenant/@ref]">
                                         <a href="{@id}.html" class="list-item"><xsl:copy-of select="prenom"/> <xsl:copy-of select="nom"/></a>
+                                    </xsl:for-each>
+                                </div>
+                            </div>
+                        </section>
+                    </body>
+                </html>
+            </xsl:result-document>
+        </xsl:for-each>
+    </xsl:template>
+
+    <xsl:template match="groupes">
+        <xsl:for-each select="groupe">
+            <xsl:result-document href="{@id}.html">  
+                <html>
+                    <xsl:copy-of select="$head"/>
+                    <body>
+                    <xsl:copy-of select="$navbar"/>  
+                        <section class="section">
+                            <div class="container">
+                                <h1 class="title"><xsl:value-of select="nom"/></h1>
+                                <h2 class="subtitle"><xsl:value-of select="credits"/> crédits <xsl:value-of select="@role"/></h2>
+                                <hr/>
+                                <h2 class="title is-5">Unités a choisir</h2>
+                                <div class="list is-hoverable">
+                                    <xsl:for-each select="//unite[@id = current()/ref-unite/@ref]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom"/> (<xsl:copy-of select="credits"/> crédits)</a>
+                                    </xsl:for-each>
+                                    <xsl:for-each select="//groupe[@id = current()/ref-groupe/@ref]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom"/> (<xsl:copy-of select="credits"/> crédits)</a>
+                                    </xsl:for-each>
+                                </div>
+                                <hr/>
+                                <h2 class="title is-5">Parcours</h2>
+                                <div class="list is-hoverable">
+                                    <xsl:for-each select="//parcour[@id = current()/ref-parcour/@ref]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom-court"/></a>
                                     </xsl:for-each>
                                 </div>
                             </div>
@@ -205,6 +232,9 @@
                                 <div class="list is-hoverable">
                                     <xsl:for-each select="//unite[@id = current()/ref-unite/@ref]">
                                         <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom"/></a>
+                                    </xsl:for-each>
+                                    <xsl:for-each select="//groupe[@id = current()/ref-groupe/@ref]">
+                                        <a href="{@id}.html" class="list-item"><xsl:copy-of select="nom"/> (<xsl:copy-of select="credits"/> crédits)</a>
                                     </xsl:for-each>
                                 </div>
                                 <hr/>

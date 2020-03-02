@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!ELEMENT master (infos, intervenants, parcours, semestres, unites)>
+<!ELEMENT master (infos, intervenants, parcours, semestres, unites, groupes)>
 
 <!ELEMENT infos (nom, resume, ref-parcour+, ref-intervenant+)>
 <!ELEMENT groupes (groupe*)>
@@ -12,7 +12,7 @@
 <!ELEMENT intervenant (nom, prenom, email)>
 <!ELEMENT parcour (nom, nom-court, resume, ref-intervenant+)>
 <!ELEMENT semestre (nom, ref-unite+, ref-parcour+)>
-<!ELEMENT unite (nom, credits, resume, ref-intervenant*, ref-parcour+)>
+<!ELEMENT unite (nom, credits, resume, ref-unite*, ref-intervenant*, ref-parcour+)>
 <!ELEMENT groupe (nom, credits, ref-unite*, ref-parcour*)>
 
 <!ATTLIST infos id ID #IMPLIED>

@@ -26,7 +26,7 @@
          <xsl:call-template name="parcours"/>
          <xsl:call-template name="semestres"/>
          <xsl:call-template name="unites"/>
-         <xsl:call-template name="groupe"/>
+         <xsl:call-template name="groupes"/>
       </master>
    </xsl:template>
 
@@ -87,27 +87,6 @@
       </semestres>
    </xsl:template>
 
-   <xsl:template name="groupe">
-      <groupes>
-         <xsl:for-each select="//objet[@type = 'groupe']">
-            <groupe id="{@id}">
-               <nom>
-                  <xsl:value-of select="info[@nom='nom']/@value"/>
-               </nom>
-               <credits>
-                  <xsl:value-of select="info[@nom='nb_credits']/@value"/>
-               </credits>
-               <xsl:for-each select="info[@nom='fils']">
-                  <ref-unite ref="{@value}"/>
-               </xsl:for-each>
-               <xsl:for-each select="info[@nom='xref']">
-                  <ref-parcour ref="{@value}"/>
-               </xsl:for-each>
-            </groupe>
-         </xsl:for-each>
-      </groupes>
-   </xsl:template>
-
    <xsl:template name="unites">
         <unites>
          <xsl:for-each select="//objet[@type = 'enseignement']">
@@ -129,29 +108,51 @@
                </xsl:for-each>
             </unite>
          </xsl:for-each>
-         <xsl:for-each select="//objet[@type = 'option']">
-            <unite id="{@id}" role="option">
+      </unites>
+   </xsl:template>
+
+   <xsl:template name="groupes">
+      <groupes>
+         <xsl:for-each select="//objet[@type = 'groupe']">
+            <groupe id="{@id}">
                <nom>
                   <xsl:value-of select="info[@nom='nom']/@value"/>
                </nom>
                <credits>
                   <xsl:value-of select="info[@nom='nb_credits']/@value"/>
                </credits>
-               <resume>
-                  <xsl:copy-of select="info[@nom='contenu']/*"/> 
-               </resume>
                <xsl:for-each select="info[@nom='fils']">
                   <ref-unite ref="{@value}" />
-               </xsl:for-each>
-               <xsl:for-each select="info[@nom='responsables']">
-                  <ref-intervenant ref="{@ref}"/>
                </xsl:for-each>
                <xsl:for-each select="info[@nom='xref']">
                   <ref-parcour ref="{@value}" />
                </xsl:for-each>
-            </unite>
+            </groupe>
          </xsl:for-each>
-      </unites>
-   </xsl:template>
+         <xsl:for-each select="//objet[@type = 'option']">
+            <groupe id="{@id}">
+               <nom>
+                  <xsl:value-of select="info[@nom='nom']/@value"/>
+               </nom>
+               <credits>
+                  <xsl:value-of select="info[@nom='nb_credits']/@value"/>
+               </credits>
+               <xsl:for-each select="info[@nom='fils']">
+                  <xsl:choose>
+                     <xsl:when test="//objet[@id = current()/@value]/@type = 'enseignement'">
+                        <ref-unite ref="{@value}" />
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <ref-groupe ref="{@value}" />
+                     </xsl:otherwise>
+                  </xsl:choose>
+               </xsl:for-each>
+               <xsl:for-each select="info[@nom='xref']">
+                  <ref-parcour ref="{@value}" />
+               </xsl:for-each>
+            </groupe>
+         </xsl:for-each>
+      </groupes>
+ </xsl:template>
 
 </xsl:stylesheet>

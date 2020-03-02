@@ -11,7 +11,7 @@ dtd :
 	xmllint --valid --noout master.xml
 
 xsd :
-	xmllint -schema master.xml
+	xmllint -schema master.xsd
 
 web : clean
 	mkdir -p $(WEBDIR)
