@@ -77,7 +77,14 @@
                   <xsl:value-of select="info[@nom='nom']/@value"/>
                </nom>
                <xsl:for-each select="info[@nom='fils']">
-                  <ref-unite ref="{@value}" />
+                  <xsl:choose>
+                     <xsl:when test="//objet[@id = current()/@value]/@type = 'enseignement'">
+                        <ref-unite ref="{@value}" />
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <ref-groupe ref="{@value}" />
+                     </xsl:otherwise>
+                  </xsl:choose>
                </xsl:for-each>
                <xsl:for-each select="info[@nom='xref']">
                   <ref-parcour ref="{@value}" />
@@ -122,7 +129,14 @@
                   <xsl:value-of select="info[@nom='nb_credits']/@value"/>
                </credits>
                <xsl:for-each select="info[@nom='fils']">
-                  <ref-unite ref="{@value}" />
+                  <xsl:choose>
+                     <xsl:when test="//objet[@id = current()/@value]/@type = 'enseignement'">
+                        <ref-unite ref="{@value}" />
+                     </xsl:when>
+                     <xsl:otherwise>
+                        <ref-groupe ref="{@value}" />
+                     </xsl:otherwise>
+                  </xsl:choose>
                </xsl:for-each>
                <xsl:for-each select="info[@nom='xref']">
                   <ref-parcour ref="{@value}" />

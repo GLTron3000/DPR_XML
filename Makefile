@@ -11,15 +11,15 @@ dtd :
 	xmllint --valid --noout master.xml
 
 xsd :
-	xmllint -schema master.xsd
+	xmllint --noout -schema master.xsd master.xml 
 
 web : clean
 	mkdir -p $(WEBDIR)
-	cp -r resources/* www
+	cp -r resources/* $(WEBDIR)
 	saxon -o:$(WEBDIR)/index.html -xsl:master.xsl master.xml 
 
 tidy : 
-	tidy -im -asxhtml -indent $(WEBDIR)/*
+	tidy -im -asxhtml $(WEBDIR)/*.html;
 
 xq :
 	java -cp $HOME/saxon9/saxon9he.jar net.sf.saxon.Query "-q:requete.xq"

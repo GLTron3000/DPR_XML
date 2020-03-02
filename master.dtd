@@ -12,11 +12,12 @@
 <!ELEMENT intervenant (nom, prenom, email)>
 <!ELEMENT parcour (nom, nom-court, resume, ref-intervenant+)>
 <!ELEMENT semestre (nom, ref-unite+, ref-parcour+)>
-<!ELEMENT unite (nom, credits, resume, ref-unite*, ref-intervenant*, ref-parcour+)>
-<!ELEMENT groupe (nom, credits, ref-unite*, ref-parcour*)>
+<!ELEMENT unite (nom, credits, resume, ref-intervenant*, ref-parcour+)>
+<!ELEMENT groupe (nom, credits, ref-unite*, ref-groupe*, ref-parcour*)>
 
 <!ATTLIST infos id ID #IMPLIED>
 <!ATTLIST groupe id ID #IMPLIED>
+<!ATTLIST ref-groupe ref IDREF #REQUIRED>
 
 <!ATTLIST intervenant id ID #IMPLIED>
 <!ATTLIST ref-intervenant ref IDREF #REQUIRED>
@@ -34,6 +35,7 @@
 <!ELEMENT ref-intervenant (#PCDATA)>
 <!ELEMENT ref-parcour     (#PCDATA)>
 <!ELEMENT ref-unite       (#PCDATA)>
+<!ELEMENT ref-groupe       (#PCDATA)>
 
 <!ELEMENT credits         (#PCDATA)>
 <!ELEMENT resume          (p|ul|ol)*>
