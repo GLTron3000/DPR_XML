@@ -1,6 +1,17 @@
 <xs:schema
    xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" >
 
+   <xs:element name="master">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element ref="infos"/>
+            <xs:element ref="parcours"/>
+            <xs:element ref="intervenants"/>
+            <xs:element ref="unites"/>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+
    <xs:element name="nom">
       <xs:simpleType>
          <xs:restriction base="xs:normalizedString">
@@ -28,7 +39,7 @@
    <xs:element name="email" >
       <xs:simpleType>
          <xs:restriction base="xs:token">
-            <xs:pattern value="[a-zA-Z]@[a-zA-Z].[a-zA-Z]"/> <!-- à check et voir pour le "-" dans le 2eme groupe-->
+            <xs:pattern value="[a-zA-Z]@[*].[a-zA-Z]"/> <!-- à check et voir pour le "-" dans le 2eme groupe-->
          </xs:restriction>
       </xs:simpleType>
    </xs:element>
@@ -69,14 +80,12 @@
 
  <xs:element name="intervenant">
     <xs:complexType>
-
       <xs:sequence>
          <xs:element ref="nom"/>
          <xs:element ref="prenom"/>
          <xs:element ref="email"/>
-         <xs:element ref="ref-intervenant"/>
+        <!-- <xs:element ref="ref-intervenant"/>-->
      </xs:sequence>
-     
      <xs:attribute name="id" type="xs:NMTOKEN" use="optional"/>
 
     </xs:complexType>
@@ -85,7 +94,7 @@
  <xs:element name="intervenants">
     <xs:complexType>
       <xs:sequence>
-         <xs:element ref="intervenant" maxOccurs="unbounded"/> <!-- je sais pas si il faut specifier un nomre d'occurence -->
+         <xs:element ref="intervenant" maxOccurs="unbounded"/>
      </xs:sequence>
     </xs:complexType>
  </xs:element>
@@ -100,9 +109,11 @@
     <xs:complexType>
       <xs:sequence>
          <xs:element ref="nom" minOccurs="1"/>
+         <xs:element ref="info"/>
          <xs:element ref="semestres"/>
          <xs:element ref="ref-intervenant" />
       </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="optional"/>
     </xs:complexType>
  </xs:element>
 
@@ -114,7 +125,44 @@
     </xs:complexType>
  </xs:element>
 
- <xs:element name="ref-semestre">
+ <xs:element name="ref-unite">
+   <xs:complexType>
+      <xs:attribute name="ref" type="xs:IDREF" use="required"/>
+   </xs:complexType>
+ </xs:element>
+
+<xs:element name="unite">
+ <xs:complexType>
+    <xs:sequence>
+       <xs:element ref="nom"/>
+       <xs:element ref="info"/>
+       <xs:element ref="credits"/>
+       <xs:element ref="ref-intervenant" minOccurs="0" maxOccurs="unbounded"/>
+       <xs:element ref="ref-semestre" minOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:ID" use="optional"/>
+
+    <xs:attribute name="role" use="optional">
+       <xs:simpleType>
+          <xs:restriction base="xs:string">
+             <xs:enumeration value="obligatoire"/>
+             <xs:enumeration value="option"/>
+          </xs:restriction>
+       </xs:simpleType>
+    </xs:attribute>
+
+ </xs:complexType>
+</xs:element>
+
+<xs:element name="unites">
+   <xs:complexType>
+      <xs:sequence>
+         <xs:element ref="unite" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+</xs:element>
+
+<xs:element name="ref-semestre">
     <xs:complexType>
        <xs:attribute name="ref" type="xs:IDREF" use="required"/>
     </xs:complexType>
@@ -124,8 +172,7 @@
    <xs:complexType>
       <xs:sequence>
          <xs:element ref="nom" minOccurs="1"/>
-         <!--<xs:element ref=""/>
-         <xs:element ref=""/>-->
+         <xs:element ref="ref-unite"/> <!-- occurence wrning -->
          <xs:element ref="ref-parcour"/>
       </xs:sequence>
 
@@ -143,44 +190,39 @@
     </xs:complexType>
  </xs:element>
 
-<xs:element name="unite">
- <xs:complexType>
-    <xs:sequence>
-       <xs:element ref="nom"/>
-       <xs:element ref="info"/>
-       <xs:element ref="credits"/>
-       <xs:element ref="ref-intervenant" minOccurs="0" maxOccurs="unbounded"/>
-       <xs:element ref="ref-semestre" minOccurs="1"/>
-    </xs:sequence>
-
-    <xs:attribute name="id" type="xs:ID" use="optional"/>
-    
-
- </xs:complexType>
-</xs:element>
-
-<xs:element name="unites">
+<xs:element name="ref-groupe">
    <xs:complexType>
-      <xs:sequence>
-         <xs:element ref="unite" maxOccurs="unbounded"/>
-      </xs:sequence>
+      <xs:attribute name="ref" type="xs:IDREF" use="required"/>
    </xs:complexType>
 </xs:element>
 
+<xs:element name="groupe">
+   <xs:complexType>
+      <xs:sequence>
+         <xs:element ref="unites"/>
+      </xs:sequence>
 
+      <xs:attribute name="id" type="xs:NMTOKEN"/>
+
+   </xs:complexType>
+ </xs:element>
 
  <!--<element name="book">
+
    <element name="isbn">
      <data type="xsd:int"/>
    </element>
+
    <element name="title">
      <data type="xsd:string"/>
    </element>
+
    <element name="author-ref">
      <attribute name="ref">
        <data type="xsd:IDREF"/>
      </attribute>
    </element>
+
    <element name="character-refs">
      <data type="xsd:IDREFS"/>
    </element>
