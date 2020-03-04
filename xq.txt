@@ -1,0 +1,32 @@
+declare function local:unites($id as xs:string?)
+as xs:string?
+{
+    let $unites := doc("master.xml")//unite[ref-intervenant/@ref = $id]
+    return $unites
+};
+
+declare function local:parcours($id as xs:string?)
+as xs:string?
+{
+    let $parcours := doc("master.xml")//parcour[ref-intervenant/@ref = $id]
+    return $parcours
+};
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UltraMaster2K20</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <ul>
+    {
+        for $x in doc("master.xml")//intervenant
+        order by $x/nom
+        
+        return <li>{$x} {local:unites($x/@id)} {local:parcours($x/@id)}</li>
+    }
+    </ul> 
+</body>
+</html>

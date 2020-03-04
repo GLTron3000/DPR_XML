@@ -16,13 +16,13 @@ xsd :
 web : clean
 	mkdir -p $(WEBDIR)
 	cp -r resources/* $(WEBDIR)
-	saxon -o:$(WEBDIR)/index.html -xsl:master.xsl master.xml 
+	java -cp saxon9/saxon9he.jar net.sf.saxon.Transform -xsl:master.xsl master.xml -o:$(WEBDIR)/index.html
 
 tidy : 
 	tidy -im -asxhtml $(WEBDIR)/*.html;
 
 xq :
-	java -cp $HOME/saxon9/saxon9he.jar net.sf.saxon.Query "-q:requete.xq"
+	java -cp saxon9/saxon9he.jar net.sf.saxon.Query -q:xq.txt -o:$(WEBDIR)/xq.html
 
 clean :
 	$(RM) $(WEBDIR)/*
