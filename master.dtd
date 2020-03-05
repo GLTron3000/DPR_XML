@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<!ELEMENT master (infos, intervenants, parcours, semestres, unites, groupes)>
+<!ELEMENT master (infos, intervenants, parcours, semestres, unites, groupes)><!---->
 
-<!ELEMENT infos (nom, resume, ref-parcour*, ref-intervenant*)> 
-<!ATTLIST infos id ID #IMPLIED>
+<!ELEMENT infos (nom, resume, ref-parcour*, ref-intervenant*)> <!---->
+<!ATTLIST infos id ID #IMPLIED> <!---->
 
-<!ELEMENT parcours (parcour+)> 
+<!ELEMENT parcours (parcour+)> <!---->
 
 <!ELEMENT parcour (nom, nom-court, resume, ref-intervenant+)> <!-- ref-intervenant pour le responsable du parcour -->
-<!ATTLIST parcour id ID #IMPLIED> 
+<!ATTLIST parcour id ID #IMPLIED> <!---->
 
-<!ELEMENT ref-parcour     (#PCDATA)> 
-<!ATTLIST ref-parcour ref IDREF #REQUIRED> 
+<!ELEMENT ref-parcour     (#PCDATA)> <!---->
+<!ATTLIST ref-parcour ref IDREF #REQUIRED> <!---->
 
-<!ELEMENT semestres (semestre+)> 
+<!ELEMENT semestres (semestre+)> <!---->
 
-<!ELEMENT semestre (nom, ref-unite+, ref-groupe*, ref-parcour+)> 
-<!ATTLIST semestre id ID #IMPLIED> 
+<!ELEMENT semestre (nom, ref-unite+, ref-groupe*, ref-parcour+)> <!---->
+<!ATTLIST semestre id ID #IMPLIED> <!---->
 
-<!ELEMENT ref-semestre (#PCDATA)> 
-<!ATTLIST ref-semestre ref IDREF #REQUIRED> 
+<!ELEMENT ref-semestre (#PCDATA)> <!---->
+<!ATTLIST ref-semestre ref IDREF #REQUIRED> <!---->
 
-<!ELEMENT intervenants (intervenant+)> 
+<!ELEMENT intervenants (intervenant+)> <!---->
 
-<!ELEMENT intervenant (nom, prenom, email)> 
-<!ATTLIST intervenant id ID #IMPLIED> 
+<!ELEMENT intervenant (nom, prenom, email)> <!---->
+<!ATTLIST intervenant id ID #IMPLIED> <!---->
 
-<!ELEMENT ref-intervenant (#PCDATA)> 
-<!ATTLIST ref-intervenant ref IDREF #REQUIRED> 
+<!ELEMENT ref-intervenant (#PCDATA)> <!---->
+<!ATTLIST ref-intervenant ref IDREF #REQUIRED> <!---->
 
-<!ELEMENT unites (unite+)> 
+<!ELEMENT unites (unite+)> <!---->
 
-<!ELEMENT unite (nom, credits, resume, ref-intervenant*, ref-parcour+)> 
-<!ATTLIST unite id ID #IMPLIED> 
-<!ATTLIST unite role (obligatoire|option) #IMPLIED> 
+<!ELEMENT unite (nom, credits, resume, ref-intervenant*, ref-parcour+)> <!---->
+<!ATTLIST unite id ID #IMPLIED> <!---->
+<!ATTLIST unite role (obligatoire|option) #IMPLIED> <!---->
 
-<!ELEMENT ref-unite       (#PCDATA)> 
-<!ATTLIST ref-unite ref IDREF #REQUIRED> 
+<!ELEMENT ref-unite       (#PCDATA)> <!---->
+<!ATTLIST ref-unite ref IDREF #REQUIRED> <!---->
 
 <!ELEMENT groupe (nom, credits, ref-unite*, ref-groupe*, ref-parcour+)> 
 <!ATTLIST groupe id ID #IMPLIED> 
 
-<!ELEMENT groupes (groupe+)>
+<!ELEMENT groupes (groupe+)> <!---->
 
-<!ELEMENT ref-groupe (#PCDATA)> 
-<!ATTLIST ref-groupe ref IDREF #REQUIRED> 
+<!ELEMENT ref-groupe (#PCDATA)> <!---->
+<!ATTLIST ref-groupe ref IDREF #REQUIRED> <!---->
 
 
 <!ELEMENT credits         (#PCDATA)> 

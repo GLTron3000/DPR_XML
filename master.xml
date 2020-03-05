@@ -633,13 +633,13 @@
     </unite>
     <unite id="ME5SIN-S40BI2I4A" role="obligatoire">
       <nom>Bioinformatics Analysis of Omics Data</nom>
-      <credits/>
+      <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
     <unite id="ME5SIN-S40BI2I4B" role="obligatoire">
       <nom>Statistical Analysis of Omics Data</nom>
-      <credits/>
+      <credits>3</credits>
       <resume/>
       <ref-parcour ref="ME5SIN-PRSIN5AE"/>
     </unite>
@@ -789,7 +789,7 @@
     </unite>
     <unite id="ME5SIN-S51IN2Z1A" role="obligatoire">
       <nom>Discrete modelling of dynamical biological systems 2</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         This specialization course on discrete modelling deals with the following :
@@ -807,7 +807,7 @@
     </unite>
     <unite id="ME5SIN-S51IN2Z1B" role="obligatoire">
       <nom>Graph theory and algorithms 2</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         This specialization course helps the student to deepen his knowledge on problems on graphs and their solutions :
@@ -834,7 +834,7 @@
     </unite>
     <unite id="ME5SIN-S51IN2Z2A" role="obligatoire">
       <nom>Graph theory and algorithms 1</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         This introductory course focuses on graphs as mathematical objects and some of its uses to solve applications to biological networks. After intruducing different classes of graphs and their properties, the following points will be developped :
@@ -886,7 +886,7 @@
     </unite>
     <unite id="ME5SIN-S53MA1Z1A" role="obligatoire">
       <nom>Probabilities and statistics for modelling 1</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         Révision express des concepts fondamentaux de probabilités et statistique, en s’appuyant exclusivement sur des exemples tirés de la biologie, en particulier l’analyse des génomes et des systèmes complexes. Les exemples seront articulés avec les matières vues dans les autres cours.
@@ -927,7 +927,7 @@
     </unite>
     <unite id="ME5SIN-S53MA2Z2B" role="obligatoire">
       <nom>Statistics for biology</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         Ce cours vise à fournir aux étudiants une approche pratique de l'analyse des données biologiques avec R, basée sur les concepts acquis dans le cours « Probabilités et statistiques pour la modélisation 1 ». Les fondements mathématiques associés seront développés dans le cours « Statistiques avancées ».
@@ -951,7 +951,7 @@
     </unite>
     <unite id="ME5SIN-S54MA1Z1B" role="obligatoire">
       <nom>Continuous dynamical systems and modelling : examples</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         Exemples de systèmes dynamiques continus en biologie. Introduction à leur étude qualitative.
@@ -1734,7 +1734,7 @@
     </unite>
     <unite id="ME5SIN-S51IN2M07A" role="obligatoire">
       <nom>Architecture JEE</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <ul>
         <li>
@@ -1760,7 +1760,7 @@
     </unite>
     <unite id="ME5SIN-S51IN2M07B" role="obligatoire">
       <nom>Sécurité des applications</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         cyberedu (panorama des attaques – défenses standards).
@@ -1785,7 +1785,7 @@
     </unite>
     <unite id="ME5SIN-S51IN2M08A" role="obligatoire">
       <nom>Aspects probabilistes pour l’informatique</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         En cours de rédaction.
@@ -1800,7 +1800,7 @@
     </unite>
     <unite id="ME5SIN-S51IN2M08B" role="obligatoire">
       <nom>Méthodes numériques pour l’informatique</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         En cours de rédaction.
@@ -2308,7 +2308,7 @@
     </unite>
     <unite id="ME5SIN-S51IN3E3A" role="obligatoire">
       <nom>Science des données</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         L’objectif de ce cours est de former les étudiants à pouvoir répondre à une compétition Kaggle quelle qu’elle soit avec des méthodes avancées de machine learning. Le cours dresse un panorama avancé de l’apprentissage automatique qu’il s’agisse des paradigmes d’apprentissage (supervisé, non supervisé, semi-supervisé, actif, transductif…), des tâches (classification, régression, ranking, metric learning, prédiction structurée, classification multilabel, multi-instances ou multitaches) ou des méthodes.
@@ -2318,7 +2318,7 @@
     </unite>
     <unite id="ME5SIN-S51IN3E3B" role="obligatoire">
       <nom>Deep learning</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         Le deep learning a permis des avancées majeures pour des problèmes difficiles tels que des tâches de perception (vision, audition), de traitement de la langue (traduction…). Cette technologie envahit de nombreux champs applicatifs est est intégrée dans des systèmes industriels chez de multiples acteurs y compris les plus grands (Google, Microsoft, Amazon, Facebook, etc). L’objectif du cours est de former les étudiants à l’utilisation de toolkits de deep learning et à la conception de systèmes basés sur des architectures classiques, autoencodeurs, réseaux convolutionnels, réseaux récurrents, et des idées récentes telles que les embeddings, l’adversarial learning, les mécanismes d’attention…
@@ -2328,7 +2328,7 @@
     </unite>
     <unite id="ME5SIN-S51IN3E3C" role="obligatoire">
       <nom>Maths pour l’intelligence artificielle</nom>
-      <credits/>
+      <credits>3</credits>
       <resume>
         <p>
         L’objectif de cette unité est de mettre à niveau les étudiants sur l’ensemble des concepts mathématiques nécessaires à la maîtrise des méthodes d’intelligence artificielle et d’apprentissage abordées au cours du M2. Elle traitera des concepts suivants : probabilités (lois usuelles discrètes et continues, loi conditionnelles, indépendance…), statistiques (lois usuelles, estimation, corrélations, tests…), algèbre linéaire (opérations matricielles, tenseurs, factorisation…), optimisation continue (différentiabilité, convexité, optimalité, algorithmes).
