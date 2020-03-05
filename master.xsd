@@ -5,8 +5,9 @@
       <xs:complexType>
          <xs:sequence>
             <xs:element ref="infos"/>
-            <xs:element ref="parcours"/>
             <xs:element ref="intervenants"/>
+            <xs:element ref="parcours"/>
+            <xs:element ref="semestres"/>
             <xs:element ref="unites"/>
          </xs:sequence>
       </xs:complexType>
@@ -207,30 +208,5 @@
 
    </xs:complexType>
  </xs:element>
-
- <!--<element name="book">
-
-   <element name="isbn">
-     <data type="xsd:int"/>
-   </element>
-
-   <element name="title">
-     <data type="xsd:string"/>
-   </element>
-
-   <element name="author-ref">
-     <attribute name="ref">
-       <data type="xsd:IDREF"/>
-     </attribute>
-   </element>
-
-   <element name="character-refs">
-     <data type="xsd:IDREFS"/>
-   </element>
-   <attribute name="identifier">
-     <data type="xsd:ID"/>
-   </attribute>
- </element> -->
-
 
 </xs:schema>

@@ -2,57 +2,64 @@
 
 <!ELEMENT master (infos, intervenants, parcours, semestres, unites, groupes)>
 
-<!ELEMENT infos (nom, resume, ref-parcour+, ref-intervenant+)>
-<!ELEMENT groupes (groupe*)>
-<!ELEMENT intervenants (intervenant+)>
-<!ELEMENT parcours (parcour+)>
-<!ELEMENT semestres (semestre+)>
-<!ELEMENT unites (unite+)>
-
-<!ELEMENT intervenant (nom, prenom, email)>
-<!ELEMENT parcour (nom, nom-court, resume, ref-intervenant+)>
-<!ELEMENT semestre (nom, ref-unite+, ref-parcour+)>
-<!ELEMENT unite (nom, credits, resume, ref-intervenant*, ref-parcour+)>
-<!ELEMENT groupe (nom, credits, ref-unite*, ref-groupe*, ref-parcour*)>
-
+<!ELEMENT infos (nom, resume, ref-parcour*, ref-intervenant*)> 
 <!ATTLIST infos id ID #IMPLIED>
-<!ATTLIST groupe id ID #IMPLIED>
-<!ATTLIST ref-groupe ref IDREF #REQUIRED>
 
-<!ATTLIST intervenant id ID #IMPLIED>
-<!ATTLIST ref-intervenant ref IDREF #REQUIRED>
+<!ELEMENT parcours (parcour+)> 
 
-<!ATTLIST parcour id ID #IMPLIED>
-<!ATTLIST ref-parcour ref IDREF #REQUIRED>
+<!ELEMENT parcour (nom, nom-court, resume, ref-intervenant+)> <!-- ref-intervenant pour le responsable du parcour -->
+<!ATTLIST parcour id ID #IMPLIED> 
 
-<!ATTLIST semestre id ID #IMPLIED>
+<!ELEMENT ref-parcour     (#PCDATA)> 
+<!ATTLIST ref-parcour ref IDREF #REQUIRED> 
 
-<!ATTLIST unite id ID #IMPLIED>
-<!ATTLIST unite role (obligatoire|option) #IMPLIED>
-<!ATTLIST ref-unite ref IDREF #REQUIRED>
+<!ELEMENT semestres (semestre+)> 
+
+<!ELEMENT semestre (nom, ref-unite+, ref-groupe*, ref-parcour+)> 
+<!ATTLIST semestre id ID #IMPLIED> 
+
+<!ELEMENT ref-semestre (#PCDATA)> 
+<!ATTLIST ref-semestre ref IDREF #REQUIRED> 
+
+<!ELEMENT intervenants (intervenant+)> 
+
+<!ELEMENT intervenant (nom, prenom, email)> 
+<!ATTLIST intervenant id ID #IMPLIED> 
+
+<!ELEMENT ref-intervenant (#PCDATA)> 
+<!ATTLIST ref-intervenant ref IDREF #REQUIRED> 
+
+<!ELEMENT unites (unite+)> 
+
+<!ELEMENT unite (nom, credits, resume, ref-intervenant*, ref-parcour+)> 
+<!ATTLIST unite id ID #IMPLIED> 
+<!ATTLIST unite role (obligatoire|option) #IMPLIED> 
+
+<!ELEMENT ref-unite       (#PCDATA)> 
+<!ATTLIST ref-unite ref IDREF #REQUIRED> 
+
+<!ELEMENT groupe (nom, credits, ref-unite*, ref-groupe*, ref-parcour+)> 
+<!ATTLIST groupe id ID #IMPLIED> 
+
+<!ELEMENT groupes (groupe+)>
+
+<!ELEMENT ref-groupe (#PCDATA)> 
+<!ATTLIST ref-groupe ref IDREF #REQUIRED> 
 
 
-<!ELEMENT ref-intervenant (#PCDATA)>
-<!ELEMENT ref-parcour     (#PCDATA)>
-<!ELEMENT ref-unite       (#PCDATA)>
-<!ELEMENT ref-groupe       (#PCDATA)>
-
-<!ELEMENT credits         (#PCDATA)>
+<!ELEMENT credits         (#PCDATA)> 
 <!ELEMENT resume          (p|ul|ol)*>
-<!ELEMENT plan            (#PCDATA)>
-<!ELEMENT lieu            (#PCDATA)>
 
-<!ELEMENT nom             (#PCDATA)>
-<!ELEMENT nom-court       (#PCDATA)>
+<!ELEMENT nom             (#PCDATA)> 
+<!ELEMENT nom-court       (#PCDATA)> 
 
-<!ELEMENT prenom          (#PCDATA)>
-<!ELEMENT email           (#PCDATA)>
+<!ELEMENT prenom          (#PCDATA)> 
+<!ELEMENT email           (#PCDATA)> 
 
 <!ELEMENT ol			  (li*) >
 <!ELEMENT ul			  (li*) >
-<!ELEMENT li			  (t|b|i|u|ul)* >
-<!ELEMENT p				  (t|b|i|u|br)* >
-<!ELEMENT t				  (#PCDATA) >
+<!ELEMENT li			  (#PCDATA|b|i|u|ul)* >
+<!ELEMENT p				  (#PCDATA|b|i|u|br)* >
 <!ELEMENT b				  (#PCDATA) >
 <!ELEMENT i				  (#PCDATA) >
 <!ELEMENT u				  (#PCDATA) >
