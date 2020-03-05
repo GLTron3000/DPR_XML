@@ -1,31 +1,64 @@
-declare function local:unites($id as xs:string?)
-as xs:string?
+declare option saxon:output "doctype-public=-//W3C//DTD XHTML 1.0 Strict//FR";
+declare option saxon:output "doctype-system=http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd";
+declare option saxon:output "indent=yes";
+
+declare variable $intervenants := doc("master.xml")//intervenant;
+declare variable $unites := doc("master.xml")//unite;
+declare variable $parcours := doc("master.xml")//parcour;
+
+declare function local:unites($intervenant as element(intervenant))
+as element()*
 {
-    let $unites := doc("master.xml")//unite[ref-intervenant/@ref = $id]
-    return $unites
+    for $unite in $unites[ref-intervenant/@ref = $intervenant/@id]
+    order by $unite/nom
+
+    return  <li>{data($unite/nom)}</li>
 };
 
-declare function local:parcours($id as xs:string?)
-as xs:string?
+declare function local:parcours($intervenant as element(intervenant))
+as element()*
 {
-    let $parcours := doc("master.xml")//parcour[ref-intervenant/@ref = $id]
-    return $parcours
+    for $parcour in $parcours[$unites[ref-intervenant/@ref = $intervenant/@id]/ref-parcour/@ref = @id]
+    order by $parcour/nom-court
+
+    return <li>{data($parcour/nom-court)}</li>
 };
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>UltraMaster2K20</title>
-    <link rel="stylesheet" href="bulma.min.css" />
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1"
+        name="viewport"/>
+  <title>XQuery</title>
+  <link href="style.css"
+        rel="stylesheet"/>
+  <link href="favicon.ico"
+        rel="icon"
+        type="image/x-icon"/>
 </head>
 <body>
+    <h1>Liste des enseignants</h1>
     <ul>
     {
-        for $x in doc("master.xml")//intervenant
-        order by $x/nom
-        
-        return <li>{$x} {local:unites($x/@id)} {local:parcours($x/@id)}</li>
+        for $intervenant in $intervenants
+        order by $intervenant/nom
+
+        return <li class="intervenant">
+            <h2>{data($intervenant/prenom)}&#160;{data($intervenant/nom)}</h2>
+            <p>Email: {data($intervenant/email)}</p>
+            <h3>Unités</h3>
+            <ul class="sousliste"> 
+                {local:unites($intervenant)} 
+                &#160;
+            </ul> 
+
+            <h3>Parcours</h3>
+            <ul class="sousliste"> 
+                {local:parcours($intervenant)} 
+                &#160;
+            </ul> 
+            
+        </li>
     }
     </ul> 
 </body>

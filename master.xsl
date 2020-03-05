@@ -161,7 +161,7 @@
                         <xsl:copy-of select="$navbar"/>  
                         <section class="section">
                             <div class="container">
-                                <h1 class="title"><xsl:value-of select="prenom"/> <xsl:value-of select="nom"/></h1>
+                                <h1 class="title"><xsl:value-of select="prenom"/>&#160;<xsl:value-of select="nom"/></h1>
                                 <h3>Email: <xsl:value-of select="email"/></h3>
                                 <hr/>
                                 <h2 class="title is-4">Unités enseignées</h2>

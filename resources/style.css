@@ -1,0 +1,31 @@
+body{
+    line-height: 1.6;
+    font-size: 18px;
+    font-family: sans-serif;
+    color:#444;
+    background-color: #EEEEEE;
+    padding: 25px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.intervenant {
+    background-color: #d9d9dd;
+	list-style-type: none;
+	margin: 15px;
+	position: relative;
+	overflow: hidden;
+	padding: 0px 25px 10px 25px;
+	z-index: 1;
+	box-sizing: border-box;
+}
+
+.intervenant h3{
+    position: relative;
+    left: 20px;
+    margin-bottom: 2px;
+}
+
+.sousliste li{
+	list-style-type: square;
+}
