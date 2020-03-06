@@ -6,6 +6,7 @@
         <head>
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <title>UltraMaster2K20</title>
+            <script src="script.js"></script> 
             <link rel="stylesheet" href="bulma.min.css" />
             <link rel="icon" href="favicon.ico" type="image/x-icon" />
         </head>
