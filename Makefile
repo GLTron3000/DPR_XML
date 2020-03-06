@@ -18,7 +18,7 @@ xsd :
 web : clean
 	mkdir -p $(WEBDIR)
 	cp -r resources/* $(WEBDIR)
-	java -cp saxon9/saxon9he.jar net.sf.saxon.Transform -xsl:master.xsl master.xml -o:$(WEBDIR)/index.html
+	java -cp saxon9/saxon9he.jar net.sf.saxon.Transform -xsl:xsl/master.xsl master.xml -o:$(WEBDIR)/index.html
 
 tidy : 
 	tidy -im -asxhtml $(WEBDIR)/*.html;
