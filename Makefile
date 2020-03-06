@@ -1,8 +1,10 @@
 RM      = rm -rf
 WEBDIR 	= www
+WEBNAV  = firefox
 
 all : dtd xsd web tidy xq 
-	firefox $(WEBDIR)/index.html
+	$(WEBNAV) $(WEBDIR)/index.html
+	$(WEBNAV) $(WEBDIR)/xq.html
 
 convert :
 	xsltproc -o master.xml converter.xsl donnees-master.xml
