@@ -1,14 +1,11 @@
-RM      = rm -rf
-WEBDIR 	= www
 WEBNAV  = firefox
-LIBS = binaries
+WEBDIR 	= www
+LIBS    = binaries
+RM      = rm -rf
 
 all : dtd xsd web tidy xq 
 	$(WEBNAV) $(WEBDIR)/index.html
 	$(WEBNAV) $(WEBDIR)/xq.html
-
-convert :
-	xsltproc -o master.xml converter.xsl donnees-master.xml
 
 dtd :
 	xmllint --valid --noout master.xml
